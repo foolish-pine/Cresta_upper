@@ -4,20 +4,37 @@
 
 $(function () {
   // ---------------------------------------------
+  // スティッキーヘッダー
+  // ---------------------------------------------
+
+  var $window = $(window),
+    $header = $(".p-header"),
+    threshold = $(".p-main-visual__img").outerHeight();
+  console.log($window.scrollTop());
+
+  $window.on("scroll", function () {
+    if ($window.scrollTop() > threshold) {
+      $header.addClass("visible");
+    } else {
+      $header.removeClass("visible");
+    }
+  });
+
+  // ---------------------------------------------
   // ハンバーガーメニュー
   // ---------------------------------------------
-  var nav = $(".p-header__nav"),
-    menu = $(".p-header__menu"),
-    menuIcon = $(".p-header__menu-line");
+  var $nav = $(".p-header__nav"),
+    $menu = $(".p-header__menu"),
+    $menuIcon = $(".p-header__menu-line");
 
   // メニューアイコンをクリックしてnavを開閉する
   var duration = 300;
 
-  menu.on("click", function () {
-    menuIcon.stop(true).toggleClass("active");
-    nav.toggleClass("open");
-    if (nav.hasClass("open")) {
-      nav.stop(true).animate(
+  $menu.on("click", function () {
+    $menuIcon.stop(true).toggleClass("active");
+    $nav.toggleClass("open");
+    if ($nav.hasClass("open")) {
+      $nav.stop(true).animate(
         {
           right: "0",
         },
@@ -25,7 +42,7 @@ $(function () {
         "swing"
       );
     } else {
-      nav.stop(true).animate(
+      $nav.stop(true).animate(
         {
           right: "-100vw",
         },
@@ -36,11 +53,11 @@ $(function () {
   });
 
   // ナビの余白クリックでメニュー閉じる
-  nav.on("click", function () {
-    if (nav.hasClass("open")) {
-      menuIcon.stop(true).removeClass("active");
-      nav.removeClass("open");
-      nav.stop(true).animate(
+  $nav.on("click", function () {
+    if ($nav.hasClass("open")) {
+      $menuIcon.stop(true).removeClass("active");
+      $nav.removeClass("open");
+      $nav.stop(true).animate(
         {
           right: "-100vw",
         },
