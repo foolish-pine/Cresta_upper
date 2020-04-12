@@ -6,16 +6,43 @@
   padding: 40px 0;
   background-color: $color-contact-bg;
 
+  @include mq(tab) {
+    padding: 40px 0 80px;
+  }
+
+  @include mq(pc) {
+    padding: 60px 0 120px;
+  }
+
   &__inner {
     max-width: $max-width-inner-sp;
     margin: 0 auto;
+
+    @include mq(tab) {
+      max-width: $max-width-inner-tab;
+    }
+
+    @include mq(pc) {
+      display: flex;
+      flex-direction: row-reverse;
+      justify-content: space-between;
+      max-width: $max-width-inner-pc;
+    }
   }
 
   &__img {
     margin-bottom: 30px;
+
+    @include mq(tab) {
+      max-width: 520px;
+    }
   }
 
   &__text {
     margin-bottom: 60px;
+
+    @include mq(tab) {
+      max-width: 520px;
+    }
   }
 }
