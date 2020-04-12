@@ -704,19 +704,6 @@ button:focus {
   -webkit-overflow-scrolling: touch;
 }
 
-@media print, screen and (min-width: 1440px) {
-  .p-header__list {
-    -webkit-box-orient: unset;
-    -webkit-box-direction: unset;
-    -ms-flex-direction: unset;
-    flex-direction: unset;
-    -webkit-box-align: unset;
-    -ms-flex-align: unset;
-    align-items: unset;
-    height: auto;
-  }
-}
-
 .p-header__item {
   padding-bottom: 3px;
   margin-bottom: 50px;
@@ -780,12 +767,6 @@ button:focus {
 .p-header__menu-icon {
   width: 22px;
   height: 12px;
-}
-
-@media print, screen and (min-width: 1440px) {
-  .p-header__menu-icon {
-    display: none;
-  }
 }
 
 .p-header__menu-line {

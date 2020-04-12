@@ -59,12 +59,6 @@
     overflow: auto;
     list-style: none;
     -webkit-overflow-scrolling: touch;
-
-    @include mq(pc) {
-      flex-direction: unset;
-      align-items: unset;
-      height: auto;
-    }
   }
 
   &__item {
@@ -121,10 +115,6 @@
   &__menu-icon {
     width: 22px;
     height: 12px;
-
-    @include mq(pc) {
-      display: none;
-    }
   }
 
   &__menu-line {
