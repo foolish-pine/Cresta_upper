@@ -17,6 +17,12 @@
     @include mq(tab) {
       max-width: $max-width-inner-tab;
     }
+
+    @include mq(pc) {
+      display: flex;
+      justify-content: space-between;
+      max-width: $max-width-inner-pc;
+    }
   }
 
   &__section-title {
@@ -39,6 +45,10 @@
   @include mq(tab) {
     max-width: 520px;
     margin-bottom: 80px;
+  }
+
+  @include mq(pc) {
+    margin-bottom: 0;
   }
 }
 

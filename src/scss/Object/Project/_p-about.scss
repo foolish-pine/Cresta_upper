@@ -13,6 +13,12 @@
     padding: 60px 0;
   }
 
+  @include mq(pc) {
+    max-width: $max-width-inner-pc;
+    padding: 60px 0 60px 50px;
+    margin: 0 auto;
+  }
+
   &__inner {
     max-width: $max-width-inner-sp;
     height: 441px;
@@ -21,7 +27,8 @@
     background-color: #fff;
 
     @include mq(tab) {
-      max-width: calc((590 / 768) * 100%);
+      max-width: calc((590 / 1100) * 100%);
+      margin: 0;
     }
   }
 

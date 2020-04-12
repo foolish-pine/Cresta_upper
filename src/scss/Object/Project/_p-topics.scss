@@ -16,6 +16,11 @@
 
   &__container {
     margin-bottom: 30px;
+
+    @include mq(pc) {
+      width: 700px;
+      margin-left: auto;
+    }
   }
 
   &__content {
@@ -49,6 +54,12 @@
       font-weight: 700;
       color: $color-text;
       letter-spacing: 0.068em;
+    }
+  }
+
+  &__button {
+    @include mq(pc) {
+      margin-left: auto;
     }
   }
 }

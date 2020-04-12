@@ -198,17 +198,19 @@ function spaceTrim ($str) {
         <div class="p-contact__img">
           <img src="img/recruit-img@2x.jpg" alt="">
         </div>
-        <h2 class="p-contact__section-title c-text__section-title">
-          CONTACT
-        </h2>
-        <p class="p-contact__text c-text">
-          制作の依頼、取材の依頼、IRや採用についての連絡・お問い合わせはコンタクトページから承っております。
-          まずはお気軽にご連絡ください。担当者から改めて返信いたします。
-        </p>
-        <div class="p-contact__button c-button--default">
-          <a href="#">
-            READ MORE
-          </a>
+        <div class="p-contact__container">
+          <h2 class="p-contact__section-title c-text__section-title">
+            CONTACT
+          </h2>
+          <p class="p-contact__text c-text">
+            制作の依頼、取材の依頼、IRや採用についての連絡・お問い合わせはコンタクトページから承っております。
+            まずはお気軽にご連絡ください。担当者から改めて返信いたします。
+          </p>
+          <div class="p-contact__button c-button--default">
+            <a href="#">
+              READ MORE
+            </a>
+          </div>
         </div>
       </div>
   </main>

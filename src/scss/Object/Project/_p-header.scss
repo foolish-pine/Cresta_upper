@@ -26,6 +26,11 @@
       left: 30px;
     }
 
+    @include mq(pc) {
+      left: 58px;
+      width: 260px;
+    }
+
     a {
       display: block;
       text-decoration: none;
@@ -43,14 +48,6 @@
     z-index: 100;
     width: 100vw;
     background-color: $color-header-nav-bg;
-
-    @include mq(pc) {
-      top: 30px;
-      right: 120px;
-      display: block;
-      width: auto;
-      background-color: transparent;
-    }
   }
 
   &__list {
@@ -105,6 +102,11 @@
     @include mq(tab) {
       top: 38px;
       right: 30px;
+    }
+
+    @include mq(pc) {
+      top: 38px;
+      right: 58px;
     }
 
     &::after {

@@ -10,7 +10,6 @@ $(function () {
   var $window = $(window),
     $header = $(".p-header"),
     threshold = $(".p-main-visual__img").outerHeight();
-  console.log($window.scrollTop());
 
   $window.on("scroll", function () {
     if ($window.scrollTop() > threshold) {
