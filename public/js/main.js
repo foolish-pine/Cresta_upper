@@ -14,7 +14,7 @@ $(function () {
       // navを非表示にする
       $(".p-header__nav").hide();
       // メニューアイコンを非activeにする
-      $(".p-header__menuLine").removeClass("active");
+      $(".p-header__menu-line").removeClass("active");
     } else {
       // 画面幅768px以上のとき
       // navを表示させる
@@ -23,15 +23,15 @@ $(function () {
   });
 
   // メニューアイコンをクリックしてnavを開閉する
-  $(".p-header__menu").on("click", function () {
-    $(".p-header__menuLine").stop(true).toggleClass("active");
+  $(".p-header__menu-icon").on("click", function () {
+    $(".p-header__menu-line").stop(true).toggleClass("active");
     $(".p-header__nav").stop(true).fadeToggle();
   });
 
   // ナビの余白クリックでメニュー閉じる
   $(".p-header__nav").on("click", function () {
-    if ($(".p-header__menuLine").hasClass("active")) {
-      $(".p-header__menuLine").stop(true).toggleClass("active");
+    if ($(".p-header__menu-line").hasClass("active")) {
+      $(".p-header__menu-line").stop(true).toggleClass("active");
       $(".p-header__nav").stop(true).fadeToggle();
     }
   });

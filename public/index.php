@@ -37,13 +37,13 @@ function spaceTrim ($str) {
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>クリ★スタコーディング課題【初級編】</title>
+  <title>クリ★スタコーディング課題【上級編】</title>
   <meta name="description" content="" />
   <!-- 検索結果から除外する -->
   <meta name="robots" content="none" />
   <!-- favicon -->
-  <link rel="apple-touch-icon" sizes="180x180" href="img/favicon/apple-touch-icon.png" />
-  <link rel="icon" href="img/favicon/favicon.ico" />
+  <link rel="apple-touch-icon" sizes="180x180" href="./ img/favicon/apple-touch-icon.png" />
+  <link rel="icon" href="./img/favicon/favicon.ico" />
   <!-- CSS -->
   <link rel="stylesheet" href="./css/style.css" />
 </head>
@@ -53,28 +53,43 @@ function spaceTrim ($str) {
     <div class="p-header">
       <div class="p-header__logo">
         <a href="#">
-          <h1>クリ★スタ</h1>
+          <h1>
+            <img src="./img/site-logo@2x.png" alt="DIGSMILE INC.">
+          </h1>
         </a>
       </div>
       <nav class="p-header__nav">
         <ul class="p-header__list">
-          <li class="p-header__item"><a class="js-smoothscroll" href="#about">About</a></li>
-          <li class="p-header__item"><a class="js-smoothscroll" href="#service">Service</a></li>
-          <li class="p-header__item"><a class="js-smoothscroll" href="#news">News</a></li>
-          <li class="p-header__item"><a class="js-smoothscroll" href="#contact">Contact</a></li>
+          <li class="p-header__item"><a class="js-smoothscroll" href="#about">ABOUT US</a></li>
+          <li class="p-header__item"><a class="js-smoothscroll" href="#service">WORKS</a></li>
+          <li class="p-header__item"><a class="js-smoothscroll" href="#news">CULTURE</a></li>
+          <li class="p-header__item"><a class="js-smoothscroll" href="#contact">TOPICS</a></li>
+          <li class="p-header__item"><a class="js-smoothscroll" href="#contact">CONTACT</a></li>
         </ul>
       </nav>
-      <button class="p-header__menu">
-        <span class="p-header__menuLine"></span>
-        <span class="p-header__menuLine"></span>
-        <span class="p-header__menuLine"></span>
-      </button>
+      <div class="p-header__menu">
+        <button class="p-header__menu-icon">
+          <span class="p-header__menu-line"></span>
+          <span class="p-header__menu-line"></span>
+          <span class="p-header__menu-line"></span>
+        </button>
+      </div>
     </div>
   </header>
   <main class="l-main">
-    <div class="p-mainVisual">
-      <div class="p-mainVisual__catch">
-        <p>Cresta Design.</p>
+    <div class="p-main-visual">
+      <div class="p-main-visual__img"></div>
+      <div class="p-main-visual__bg"></div>
+      <div class="p-main-visual__catch">
+        <p class="p-main-visual__catch--1">
+          デザインで人を笑顔にする会社<br>
+          DIGSMILE INC.
+        </p>
+        <p class="p-main-visual__catch--2">
+          DESIGN<br>
+          FOR<br>
+          SMILE.
+        </p>
       </div>
     </div>
     <div id="about" class="p-about">

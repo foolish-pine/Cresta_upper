@@ -5,29 +5,23 @@
 .p-header {
   position: relative;
   width: 100%;
-  height: 75px;
+  height: 60px;
   margin: 0 auto;
-  background: $color-header-bg;
-  border-bottom: solid 1px $color-header-border;
 
   &__logo {
     position: absolute;
     top: 20px;
     left: 15px;
+    width: 189px;
+    height: 20px;
 
     a {
+      display: block;
       text-decoration: none;
     }
 
-    h1 {
-      font-size: 2.6rem;
-      font-weight: 500;
-      color: #fff;
-      letter-spacing: 0;
-    }
-
-    @include mq(pc) {
-      left: 120px;
+    img {
+      display: block;
     }
   }
 
@@ -91,21 +85,33 @@
 
   &__menu {
     position: absolute;
-    top: 29px;
+    top: 24px;
     right: 15px;
     z-index: 101;
-    width: 25px;
-    height: 16px;
+    display: flex;
+
+    &::after {
+      margin-left: 7px;
+      font-size: 1rem;
+      font-weight: 800;
+      color: #fff;
+      content: "MENU";
+    }
+  }
+
+  &__menu-icon {
+    width: 22px;
+    height: 12px;
 
     @include mq(pc) {
       display: none;
     }
   }
 
-  &__menuLine {
+  &__menu-line {
     position: absolute;
-    right: 0;
-    width: 25px;
+    left: 0;
+    width: 22px;
     height: 2px;
     background-color: #fff;
     transition: transform 0.3s;
@@ -114,13 +120,13 @@
       top: 0;
 
       &.active {
-        top: 8px;
+        top: 5px;
         transform: rotate(45deg);
       }
     }
 
     &:nth-child(2) {
-      top: 8px;
+      top: 5px;
 
       &.active {
         transform: scaleX(0);
@@ -128,10 +134,10 @@
     }
 
     &:last-child {
-      top: 16px;
+      top: 10px;
 
       &.active {
-        top: 8px;
+        top: 5px;
         transform: rotate(135deg);
       }
     }
