@@ -27,7 +27,11 @@
     background-color: #fff;
 
     @include mq(tab) {
-      max-width: calc((590 / 1100) * 100%);
+      max-width: calc((590 / 768) * 100%);
+      margin: 0 auto;
+    }
+
+    @include mq(pc) {
       margin: 0;
     }
   }

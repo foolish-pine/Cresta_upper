@@ -12,6 +12,10 @@
     @include mq(tab) {
       max-width: $max-width-inner-tab;
     }
+
+    @include mq(pc) {
+      max-width: $max-width-inner-pc;
+    }
   }
 
   &__container {
