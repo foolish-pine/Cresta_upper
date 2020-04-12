@@ -8,6 +8,10 @@
   &__inner {
     max-width: $max-width-inner-sp;
     margin: 0 auto;
+
+    @include mq(tab) {
+      max-width: $max-width-inner-tab;
+    }
   }
 
   &__container {
@@ -17,6 +21,10 @@
   &__content {
     margin-bottom: 19px;
     border-bottom: 1px solid #ddd;
+
+    @include mq(tab) {
+      margin-bottom: 30px;
+    }
 
     a {
       text-decoration: none;
@@ -29,6 +37,10 @@
       font-weight: 700;
       color: $color-text-time;
       letter-spacing: 0.015em;
+
+      @include mq(tab) {
+        margin-bottom: 10px;
+      }
     }
 
     p {

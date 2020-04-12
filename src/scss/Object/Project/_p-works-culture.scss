@@ -6,9 +6,17 @@
   padding: 40px 0;
   background-color: $color-works-culture-bg;
 
+  @include mq(tab) {
+    padding: 60px 0;
+  }
+
   &__inner {
     max-width: $max-width-inner-sp;
     margin: 0 auto;
+
+    @include mq(tab) {
+      max-width: $max-width-inner-tab;
+    }
   }
 
   &__section-title {
@@ -27,4 +35,15 @@
 
 .p-works {
   margin-bottom: 40px;
+
+  @include mq(tab) {
+    max-width: 520px;
+    margin-bottom: 80px;
+  }
+}
+
+.p-culture {
+  @include mq(tab) {
+    max-width: 520px;
+  }
 }

@@ -4,10 +4,14 @@
 
 .p-about {
   height: 541px;
-  padding-top: 50px;
+  padding: 50px 0;
   background-image: url(../img/about-img@2x.jpg);
   background-position: center;
   background-size: cover;
+
+  @include mq(tab) {
+    padding: 60px 0;
+  }
 
   &__inner {
     max-width: $max-width-inner-sp;
@@ -16,8 +20,8 @@
     margin: 0 auto;
     background-color: #fff;
 
-    @include mq(pc) {
-      max-width: $max-width-inner-pc;
+    @include mq(tab) {
+      max-width: calc((590 / 768) * 100%);
     }
   }
 
