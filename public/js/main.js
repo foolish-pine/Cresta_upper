@@ -6,33 +6,47 @@ $(function () {
   // ---------------------------------------------
   // ハンバーガーメニュー
   // ---------------------------------------------
-  var mq = window.matchMedia("screen and (max-width:767px)");
+  var nav = $(".p-header__nav"),
+    menu = $(".p-header__menu"),
+    menuIcon = $(".p-header__menu-line");
 
-  $(window).on("resize", function () {
-    if (mq.matches) {
-      // 画面幅767px以下のとき
-      // navを非表示にする
-      $(".p-header__nav").hide();
-      // メニューアイコンを非activeにする
-      $(".p-header__menu-line").removeClass("active");
+  // メニューアイコンをクリックしてnavを開閉する
+  var duration = 300;
+
+  menu.on("click", function () {
+    menuIcon.stop(true).toggleClass("active");
+    nav.toggleClass("open");
+    if (nav.hasClass("open")) {
+      nav.stop(true).animate(
+        {
+          right: "0",
+        },
+        duration,
+        "swing"
+      );
     } else {
-      // 画面幅768px以上のとき
-      // navを表示させる
-      $(".p-header__nav").show();
+      nav.stop(true).animate(
+        {
+          right: "-100vw",
+        },
+        duration,
+        "swing"
+      );
     }
   });
 
-  // メニューアイコンをクリックしてnavを開閉する
-  $(".p-header__menu-icon").on("click", function () {
-    $(".p-header__menu-line").stop(true).toggleClass("active");
-    $(".p-header__nav").stop(true).fadeToggle();
-  });
-
   // ナビの余白クリックでメニュー閉じる
-  $(".p-header__nav").on("click", function () {
-    if ($(".p-header__menu-line").hasClass("active")) {
-      $(".p-header__menu-line").stop(true).toggleClass("active");
-      $(".p-header__nav").stop(true).fadeToggle();
+  nav.on("click", function () {
+    if (nav.hasClass("open")) {
+      menuIcon.stop(true).removeClass("active");
+      nav.removeClass("open");
+      nav.stop(true).animate(
+        {
+          right: "-100vw",
+        },
+        duration,
+        "swing"
+      );
     }
   });
 

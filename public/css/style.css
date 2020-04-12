@@ -673,10 +673,10 @@ button:focus {
 .p-header__nav {
   position: absolute;
   top: 0;
+  right: -100vw;
   z-index: 100;
-  display: none;
   width: 100vw;
-  background-color: #1b1310;
+  background-color: rgba(34, 34, 34, 0.95);
 }
 
 @media print, screen and (min-width: 1440px) {
@@ -757,6 +757,7 @@ button:focus {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  cursor: pointer;
 }
 
 .p-header__menu::after {
@@ -796,8 +797,8 @@ button:focus {
 
 .p-header__menu-line:first-child.active {
   top: 5px;
-  -webkit-transform: rotate(45deg);
-  transform: rotate(45deg);
+  -webkit-transform: rotate(30deg);
+  transform: rotate(30deg);
 }
 
 .p-header__menu-line:nth-child(2) {
@@ -815,8 +816,8 @@ button:focus {
 
 .p-header__menu-line:last-child.active {
   top: 5px;
-  -webkit-transform: rotate(135deg);
-  transform: rotate(135deg);
+  -webkit-transform: rotate(150deg);
+  transform: rotate(150deg);
 }
 
 /* ================================================================

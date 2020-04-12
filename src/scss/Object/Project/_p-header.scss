@@ -28,8 +28,8 @@
   &__nav {
     position: absolute;
     top: 0;
+    right: -100vw;
     z-index: 100;
-    display: none;
     width: 100vw;
     background-color: $color-header-bg;
 
@@ -89,6 +89,7 @@
     right: 15px;
     z-index: 101;
     display: flex;
+    cursor: pointer;
 
     &::after {
       margin-left: 7px;
@@ -121,7 +122,7 @@
 
       &.active {
         top: 5px;
-        transform: rotate(45deg);
+        transform: rotate(30deg);
       }
     }
 
@@ -138,7 +139,7 @@
 
       &.active {
         top: 5px;
-        transform: rotate(135deg);
+        transform: rotate(150deg);
       }
     }
   }
