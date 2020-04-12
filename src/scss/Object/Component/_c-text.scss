@@ -4,18 +4,17 @@
 
 .c-text {
   font-size: 1.4rem;
-  font-weight: 700;
-  line-height: calc(30 / 14);
+  font-weight: 500;
+  line-height: 2;
   color: $color-text;
-  letter-spacing: 0.05em;
+  letter-spacing: 0;
 
-  &__sectionTitle {
-    margin-bottom: 70px;
-    font-size: 3.6rem;
-    font-weight: 500;
-    color: $color-text-sectionTitle;
-    text-align: center;
-    letter-spacing: 0.05em;
+  &__section-title {
+    margin-bottom: 30px;
+    font-size: 2.8rem;
+    font-weight: 800;
+    color: $color-text-section-title;
+    letter-spacing: 0.063em;
   }
 
   &__sectionSubTitle {

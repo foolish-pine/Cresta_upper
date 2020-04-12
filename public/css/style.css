@@ -357,15 +357,12 @@ button:focus {
   ボタンコンポーネント
    =================================================================== */
 .c-button--default, .c-button--top, .c-button--back {
-  width: 235px;
-  height: 60px;
-  font-size: 2rem;
-  line-height: 60px;
+  width: 160px;
+  height: 36px;
+  font-size: 1.1rem;
+  line-height: 36px;
   text-align: center;
-  letter-spacing: 0.05em;
-  border-radius: 51px;
-  -webkit-box-shadow: 0 0 6px #1b1310;
-  box-shadow: 0 0 6px #1b1310;
+  letter-spacing: 0.015em;
 }
 
 .c-button--default input, .c-button--top input, .c-button--back input {
@@ -375,10 +372,16 @@ button:focus {
 }
 
 .c-button--default, .c-button--top {
-  color: #fff;
-  background-color: #1b1310;
+  background-color: #000;
   -webkit-transition: all 0.4s;
   transition: all 0.4s;
+}
+
+.c-button--default a, .c-button--top a {
+  display: block;
+  font-weight: 500;
+  color: #fff;
+  text-decoration: none;
 }
 
 @media print, screen and (min-width: 1440px) {
@@ -436,7 +439,7 @@ button:focus {
   font-family: "Hiragino Kaku Gothic ProN", sans-serif;
   font-size: 1.3rem;
   line-height: calc(25 / 13);
-  color: #141414;
+  color: #333;
   letter-spacing: 0.05em;
   -webkit-box-shadow: 0 0 6px rgba(0, 0, 0, 0.16);
   box-shadow: 0 0 6px rgba(0, 0, 0, 0.16);
@@ -447,19 +450,18 @@ button:focus {
    =================================================================== */
 .c-text {
   font-size: 1.4rem;
-  font-weight: 700;
-  line-height: calc(30 / 14);
-  color: #141414;
-  letter-spacing: 0.05em;
+  font-weight: 500;
+  line-height: 2;
+  color: #333;
+  letter-spacing: 0;
 }
 
-.c-text__sectionTitle {
-  margin-bottom: 70px;
-  font-size: 3.6rem;
-  font-weight: 500;
-  color: #141414;
-  text-align: center;
-  letter-spacing: 0.05em;
+.c-text__section-title {
+  margin-bottom: 30px;
+  font-size: 2.8rem;
+  font-weight: 800;
+  color: #333;
+  letter-spacing: 0.063em;
 }
 
 .c-text__sectionSubTitle {
@@ -486,12 +488,19 @@ button:focus {
   About
    ================================================================ */
 .p-about {
-  padding-top: 100px;
+  height: 541px;
+  padding-top: 50px;
+  background-image: url(../img/about-img@2x.jpg);
+  background-position: center;
+  background-size: cover;
 }
 
 .p-about__inner {
   max-width: calc((345 / 375) * 100%);
+  height: 441px;
+  padding: 50px 30px;
   margin: 0 auto;
+  background-color: #fff;
 }
 
 @media print, screen and (min-width: 1440px) {
@@ -500,111 +509,29 @@ button:focus {
   }
 }
 
+.p-about__text {
+  margin-bottom: 70px;
+}
+
 /* ================================================================
   Contact
    ================================================================ */
 .p-contact {
-  padding-top: 97px;
+  padding: 40px 0;
+  background-color: #f0f0f0;
 }
 
 .p-contact__inner {
-  width: 100%;
   max-width: calc((345 / 375) * 100%);
   margin: 0 auto;
 }
 
-@media print, screen and (min-width: 1440px) {
-  .p-contact__inner {
-    max-width: 700px;
-  }
-}
-
-.p-contact__sectionTitle {
-  margin-bottom: 60px;
-  font-size: 2.4rem;
-  font-weight: bold;
-  line-height: 2;
-  letter-spacing: 0.1;
-}
-
-.p-contact__text--confirmation {
-  margin-bottom: 60px;
-  font-size: 1.9rem;
-  text-align: center;
-}
-
-.p-contact__textbox {
-  width: 100%;
-  margin-bottom: 22px;
-  line-height: 1.8;
-  border: solid 1px #141414;
-}
-
-.p-contact form label {
-  font-family: "Hiragino Kaku Gothic ProN", sans-serif;
-}
-
-.p-contact__textbox--confirmation {
-  width: 100%;
-  margin-bottom: 22px;
-  line-height: 2;
-  background-color: #f5f5f5;
-  border: solid 1px #141414;
-}
-
-.p-contact__textarea {
-  margin-bottom: 40px;
-}
-
-.p-contact__textarea textarea {
-  width: 100%;
-  height: 171px;
-  line-height: 1.5;
-  resize: none;
-  border: solid 1px #141414;
-}
-
-.p-contact__errorList {
-  padding: 10px 30px;
+.p-contact__img {
   margin-bottom: 30px;
-  font-size: 1.9rem;
-  color: #ff2e5a;
-  text-align: left;
-  border: 1px solid #ff2e5a;
-  border-radius: 5px;
 }
 
-.p-contact__textarea--confirmation {
-  width: 100%;
-  min-height: 171px;
-  margin-bottom: 27px;
-  line-height: 1.5;
-  background-color: #f5f5f5;
-  border: solid 1px #141414;
-}
-
-.p-contact__buttonContainer {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-  -ms-flex-direction: column;
-  flex-direction: column;
-  margin: 0 auto;
-}
-
-@media print, screen and (min-width: 1440px) {
-  .p-contact__buttonContainer {
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-    -ms-flex-direction: row;
-    flex-direction: row;
-  }
-}
-
-.p-contact__button {
-  margin: 0 auto 50px;
+.p-contact__text {
+  margin-bottom: 60px;
 }
 
 /* ================================================================
@@ -612,15 +539,9 @@ button:focus {
    ================================================================ */
 .p-footer {
   width: 100%;
-  height: 60px;
+  height: 50px;
   margin: 0 auto;
-  background-color: #1b1310;
-}
-
-@media print, screen and (min-width: 1440px) {
-  .p-footer {
-    height: 80px;
-  }
+  background-color: #525252;
 }
 
 .p-footer__inner {
@@ -629,18 +550,12 @@ button:focus {
 }
 
 .p-footer p {
-  font-size: 1.4rem;
-  font-weight: regular;
-  line-height: 60px;
+  font-size: 1rem;
+  font-weight: 700;
+  line-height: 50px;
   color: #fff;
   text-align: center;
-  letter-spacing: 0.05em;
-}
-
-@media print, screen and (min-width: 1440px) {
-  .p-footer p {
-    line-height: 80px;
-  }
+  letter-spacing: 0.015em;
 }
 
 /* ================================================================
@@ -824,8 +739,7 @@ button:focus {
   メインビジュアル
    ================================================================ */
 .p-main-visual {
-  height: 667px;
-  padding-bottom: 78px;
+  height: 745px;
 }
 
 .p-main-visual__img {
@@ -870,120 +784,73 @@ button:focus {
 }
 
 /* ================================================================
-  News
+  Topics
    ================================================================ */
-.p-news {
-  padding-top: 106px;
+.p-topics {
+  padding: 40px 0;
 }
 
-.p-news__inner {
-  width: 100%;
+.p-topics__inner {
   max-width: calc((345 / 375) * 100%);
   margin: 0 auto;
 }
 
-@media print, screen and (min-width: 1440px) {
-  .p-news__inner {
-    max-width: calc((1030 / 1440) * 100%);
-  }
+.p-topics__container {
+  margin-bottom: 30px;
 }
 
-@media print, screen and (min-width: 1440px) {
-  .p-news__container {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -ms-flex-wrap: wrap;
-    flex-wrap: wrap;
-    -webkit-box-pack: justify;
-    -ms-flex-pack: justify;
-    justify-content: space-between;
-  }
+.p-topics__content {
+  margin-bottom: 19px;
+  border-bottom: 1px solid #ddd;
 }
 
-.p-news__card {
-  margin: 0 auto 50px;
+.p-topics__content a {
+  text-decoration: none;
+}
+
+.p-topics__content time {
+  display: block;
+  margin-bottom: 8px;
+  font-size: 1rem;
+  font-weight: 700;
+  color: #cecece;
+  letter-spacing: 0.015em;
+}
+
+.p-topics__content p {
+  padding-bottom: 5px;
+  font-size: 1.2rem;
+  font-weight: 700;
+  color: #333;
+  letter-spacing: 0.068em;
 }
 
 /* ================================================================
-  Service
+  Works & Culture
    ================================================================ */
-.p-service {
-  padding-top: 160px;
+.p-works-culture {
+  padding: 40px 0;
+  background-color: #f0f0f0;
 }
 
-.p-service__inner {
-  width: 100%;
+.p-works-culture__inner {
   max-width: calc((345 / 375) * 100%);
   margin: 0 auto;
 }
 
-@media print, screen and (min-width: 1440px) {
-  .p-service__inner {
-    max-width: calc((1030 / 1440) * 100%);
-  }
+.p-works-culture__section-title {
+  margin-bottom: 30px;
 }
 
-.p-service__subTitle {
-  margin-bottom: 20px;
+.p-works-culture__img {
+  margin: 0 auto 27px;
 }
 
-@media print, screen and (min-width: 1440px) {
-  .p-service__subTitle {
-    margin-bottom: 28px;
-    white-space: nowrap;
-  }
+.p-works-culture__text {
+  margin-bottom: 28px;
+  font-size: 1.6rem;
 }
 
-.p-service__text {
-  margin-bottom: 35px;
-}
-
-.p-service__container {
+.p-works {
   margin-bottom: 40px;
-}
-
-@media print, screen and (min-width: 1440px) {
-  .p-service__container {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: justify;
-    -ms-flex-pack: justify;
-    justify-content: space-between;
-    margin-bottom: 25px;
-  }
-}
-
-@media print, screen and (min-width: 1440px) {
-  .p-service__container:nth-child(2) {
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: reverse;
-    -ms-flex-flow: row-reverse;
-    flex-flow: row-reverse;
-  }
-}
-
-@media print, screen and (min-width: 1440px) {
-  .p-service__textContainer {
-    width: calc((480 / 1030) * 100%);
-    padding-top: 15px;
-  }
-}
-
-.p-service__image img {
-  width: 100%;
-  height: auto;
-}
-
-@media print, screen and (min-width: 1440px) {
-  .p-service__image {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-align: center;
-    -ms-flex-align: center;
-    align-items: center;
-    width: calc((480 / 1030) * 100%);
-  }
 }
