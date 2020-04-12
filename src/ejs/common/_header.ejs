@@ -9,8 +9,8 @@
   <!-- 検索結果から除外する -->
   <meta name="robots" content="none" />
   <!-- favicon -->
-  <link rel="apple-touch-icon" sizes="180x180" href="img/favicon/apple-touch-icon.png" />
-  <link rel="icon" href="img/favicon/favicon.ico" />
+  <link rel="apple-touch-icon" sizes="180x180" href="<%= path %>/ img/favicon/apple-touch-icon.png" />
+  <link rel="icon" href="<%= path %>/img/favicon/favicon.ico" />
   <!-- CSS -->
   <link rel="stylesheet" href="<%= path %>/css/style.css" />
 </head>
@@ -20,22 +20,26 @@
     <div class="p-header">
       <div class="p-header__logo">
         <a href="#">
-          <h1>クリ★スタ</h1>
+          <h1>
+            <img src="<%= path %>/img/site-logo@2x.png" alt="DIGSMILE INC.">
+          </h1>
         </a>
       </div>
       <nav class="p-header__nav">
         <ul class="p-header__list">
           <li class="p-header__item"><a class="js-smoothscroll" href="<%= scrollPath %>#about">ABOUT US</a></li>
-          <li class="p-header__item"><a class="js-smoothscroll" href="<%= scrollPath %>#service">WORKS</a></li>
-          <li class="p-header__item"><a class="js-smoothscroll" href="<%= scrollPath %>#news">CULTURE</a></li>
-          <li class="p-header__item"><a class="js-smoothscroll" href="<%= scrollPath %>#contact">TOPICS</a></li>
-          <li class="p-header__item"><a class="js-smoothscroll" href="<%= scrollPath %>#contact">CONTACT </a></li>
+          <li class="p-header__item"><a class="js-smoothscroll" href="<%= scrollPath %>#works">WORKS</a></li>
+          <li class="p-header__item"><a class="js-smoothscroll" href="<%= scrollPath %>#culture">CULTURE</a></li>
+          <li class="p-header__item"><a class="js-smoothscroll" href="<%= scrollPath %>#topics">TOPICS</a></li>
+          <li class="p-header__item"><a class="js-smoothscroll" href="<%= scrollPath %>#contact">CONTACT</a></li>
         </ul>
       </nav>
-      <button class="p-header__menu">
-        <span class="p-header__menuLine"></span>
-        <span class="p-header__menuLine"></span>
-        <span class="p-header__menuLine"></span>
-      </button>
+      <div class="p-header__menu">
+        <button class="p-header__menu-icon">
+          <span class="p-header__menu-line"></span>
+          <span class="p-header__menu-line"></span>
+          <span class="p-header__menu-line"></span>
+        </button>
+      </div>
     </div>
   </header>

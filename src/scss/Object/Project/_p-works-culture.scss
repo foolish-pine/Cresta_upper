@@ -1,21 +1,30 @@
 /* ================================================================
-  Contact
+  Works & Culture
    ================================================================ */
 
-.p-contact {
+.p-works-culture {
   padding: 40px 0;
-  background-color: $color-contact-bg;
+  background-color: $color-works-culture-bg;
 
   &__inner {
     max-width: $max-width-inner-sp;
     margin: 0 auto;
   }
 
-  &__img {
+  &__section-title {
     margin-bottom: 30px;
   }
 
-  &__text {
-    margin-bottom: 60px;
+  &__img {
+    margin: 0 auto 27px;
   }
+
+  &__text {
+    margin-bottom: 28px;
+    font-size: 1.6rem;
+  }
+}
+
+.p-works {
+  margin-bottom: 40px;
 }

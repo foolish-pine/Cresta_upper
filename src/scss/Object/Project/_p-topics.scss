@@ -1,0 +1,42 @@
+/* ================================================================
+  Topics
+   ================================================================ */
+
+.p-topics {
+  padding: 40px 0;
+
+  &__inner {
+    max-width: $max-width-inner-sp;
+    margin: 0 auto;
+  }
+
+  &__container {
+    margin-bottom: 30px;
+  }
+
+  &__content {
+    margin-bottom: 19px;
+    border-bottom: 1px solid #ddd;
+
+    a {
+      text-decoration: none;
+    }
+
+    time {
+      display: block;
+      margin-bottom: 8px;
+      font-size: 1rem;
+      font-weight: 700;
+      color: $color-text-time;
+      letter-spacing: 0.015em;
+    }
+
+    p {
+      padding-bottom: 5px;
+      font-size: 1.2rem;
+      font-weight: 700;
+      color: $color-text;
+      letter-spacing: 0.068em;
+    }
+  }
+}

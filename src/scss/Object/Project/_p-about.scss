@@ -3,14 +3,25 @@
    ================================================================ */
 
 .p-about {
-  padding-top: 100px;
+  height: 541px;
+  padding-top: 50px;
+  background-image: url(../img/about-img@2x.jpg);
+  background-position: center;
+  background-size: cover;
 
   &__inner {
     max-width: $max-width-inner-sp;
+    height: 441px;
+    padding: 50px 30px;
     margin: 0 auto;
+    background-color: #fff;
 
     @include mq(pc) {
       max-width: $max-width-inner-pc;
     }
+  }
+
+  &__text {
+    margin-bottom: 70px;
   }
 }
