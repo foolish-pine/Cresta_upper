@@ -23,7 +23,6 @@
     top: 20px;
     left: 15px;
     width: 189px;
-    height: 20px;
 
     @include mq(tab) {
       top: 34px;
@@ -49,9 +48,24 @@
     position: absolute;
     top: 0;
     right: -100vw;
-    z-index: 100;
     width: 100vw;
     background-color: $color-header-nav-bg;
+
+    @include mq(pc) {
+      right: -590px;
+      width: 590px;
+    }
+  }
+
+  &__nav-filter {
+    position: fixed;
+    top: 0;
+    z-index: 100;
+    display: none;
+    width: 100vw;
+    height: 100vh;
+    background-color: #222;
+    opacity: 0.6;
   }
 
   &__list {
@@ -63,14 +77,23 @@
     overflow: auto;
     list-style: none;
     -webkit-overflow-scrolling: touch;
+
+    &::before {
+      display: block;
+      width: 70px;
+      height: 70px;
+      margin-bottom: 40px;
+      content: "";
+      background-image: url(../img/logo-mark@2x.png);
+      background-size: contain;
+    }
   }
 
   &__item {
     padding-bottom: 3px;
-    margin-bottom: 50px;
+    margin-bottom: 30px;
 
     @include mq(pc) {
-      margin-left: 30px;
       border-bottom: 2px solid transparent;
       transition: all 0.4s;
 
@@ -81,11 +104,11 @@
     }
 
     a {
-      font-size: 1.6rem;
-      font-weight: 500;
+      font-size: 2rem;
+      font-weight: 800;
       color: #fff;
       text-decoration: none;
-      letter-spacing: 0;
+      letter-spacing: 0.068em;
     }
   }
 
@@ -93,7 +116,6 @@
     position: absolute;
     top: 24px;
     right: 15px;
-    z-index: 101;
     display: flex;
     cursor: pointer;
 
