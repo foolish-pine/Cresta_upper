@@ -22,48 +22,122 @@ $(function () {
   // ---------------------------------------------
   // ハンバーガーメニュー
   // ---------------------------------------------
-  var $nav = $(".p-header__nav"),
-    $menu = $(".p-header__menu"),
-    $menuIcon = $(".p-header__menu-line");
+  var $headerNav = $(".p-header__nav"),
+    $headerMenu = $(".p-header__menu"),
+    $headerMenuLine = $(".p-header__menu-line");
+
+  var mqPC = window.matchMedia("screen and (max-width:1439px)");
+
+  // ウィンドウリサイズ時
+  $(window).on("resize", function () {
+    $headerNav.removeClass("open");
+    $headerMenuLine.stop(true).removeClass("active");
+    $(".p-header__nav-filter").fadeOut();
+    if (mqPC.matches) {
+      // sp, tabサイズのとき
+      $headerNav.css({
+        right: "-100vw",
+      });
+    } else {
+      $headerNav.css({
+        right: "-590px",
+      });
+    }
+  });
 
   // メニューアイコンをクリックしてnavを開閉する
   var duration = 300;
 
-  $menu.on("click", function () {
-    $menuIcon.stop(true).toggleClass("active");
-    $nav.toggleClass("open");
-    if ($nav.hasClass("open")) {
-      $nav.stop(true).animate(
+  $headerMenu.on("click", function () {
+    $headerMenuLine.stop(true).toggleClass("active");
+    $headerNav.toggleClass("open");
+    if (mqPC.matches) {
+      // sp, tabサイズのとき
+      if ($headerNav.hasClass("open")) {
+        $headerNav.stop(true).animate(
+          {
+            right: "0",
+          },
+          duration,
+          "swing"
+        );
+      } else {
+        $headerNav.stop(true).animate(
+          {
+            right: "-100vw",
+          },
+          duration,
+          "swing"
+        );
+      }
+    } else {
+      // PCサイズのとき
+      if ($headerNav.hasClass("open")) {
+        $headerNav.stop(true).animate(
+          {
+            right: "0",
+          },
+          duration,
+          "swing"
+        );
+        $(".p-header__nav-filter").addClass("active");
+        $(".p-header__nav-filter").fadeIn();
+      } else {
+        $headerNav.stop(true).animate(
+          {
+            right: "-590px",
+          },
+          duration,
+          "swing"
+        );
+        $(".p-header__nav-filter").removeClass("active");
+        $(".p-header__nav-filter").fadeOut();
+      }
+    }
+  });
+
+  // ナビの余白クリックでメニュー閉じる
+  $headerNav.on("click", function () {
+    $headerMenuLine.stop(true).removeClass("active");
+    $headerNav.removeClass("open");
+    if (mqPC.matches) {
+      // sp, tabサイズのとき
+      $headerMenuLine.stop(true).removeClass("active");
+      $headerNav.removeClass("open");
+      $headerNav.stop(true).animate(
         {
-          right: "0",
+          right: "-100vw",
         },
         duration,
         "swing"
       );
     } else {
-      $nav.stop(true).animate(
+      // PCサイズのとき
+      $headerNav.stop(true).animate(
         {
-          right: "-100vw",
+          right: "-590px",
         },
         duration,
         "swing"
       );
+      $(".p-header__nav-filter").removeClass("active");
+      $(".p-header__nav-filter").fadeOut();
     }
   });
 
-  // ナビの余白クリックでメニュー閉じる
-  $nav.on("click", function () {
-    if ($nav.hasClass("open")) {
-      $menuIcon.stop(true).removeClass("active");
-      $nav.removeClass("open");
-      $nav.stop(true).animate(
-        {
-          right: "-100vw",
-        },
-        duration,
-        "swing"
-      );
-    }
+  // navの外側クリックでnav閉じる
+  $(".p-header__nav-filter").on("click", function () {
+    $headerMenuLine.stop(true).removeClass("active");
+    $headerNav.removeClass("open");
+    $headerNav.stop(true).animate(
+      {
+        right: "-590px",
+      },
+      duration,
+      "swing"
+    );
+    $(".p-header__nav-filter").removeClass("active");
+    $(".p-header__nav-filter").fadeOut();
   });
 
   // ---------------------------------------------
