@@ -3,7 +3,15 @@
    ================================================================ */
 
 .p-topics {
-  padding: 40px 0;
+  padding: 42px 0 40px;
+
+  @include mq(tab) {
+    padding: 40px 0 40px;
+  }
+
+  @include mq(pc) {
+    padding: 60px 0;
+  }
 
   &__inner {
     max-width: $max-width-inner-sp;
@@ -18,6 +26,10 @@
     }
   }
 
+  &__section-title {
+    margin-bottom: 30px;
+  }
+
   &__container {
     margin-bottom: 30px;
 
@@ -28,7 +40,7 @@
   }
 
   &__content {
-    margin-bottom: 19px;
+    margin-bottom: 18px;
     border-bottom: 1px solid #ddd;
 
     @include mq(tab) {
@@ -38,26 +50,30 @@
     a {
       text-decoration: none;
     }
+  }
 
-    time {
-      display: block;
-      margin-bottom: 8px;
-      font-size: 1rem;
-      font-weight: 700;
-      color: $color-text-time;
-      letter-spacing: 0.015em;
+  &__content-time {
+    display: block;
+    margin-bottom: 8px;
+    font-size: 1rem;
+    font-weight: 700;
+    color: $color-text-time;
+    letter-spacing: 0.015em;
 
-      @include mq(tab) {
-        margin-bottom: 10px;
-      }
+    @include mq(tab) {
+      margin-bottom: 10px;
     }
+  }
 
-    p {
-      padding-bottom: 5px;
-      font-size: 1.2rem;
-      font-weight: 700;
-      color: $color-text;
-      letter-spacing: 0.068em;
+  &__content-text {
+    padding-bottom: 5px;
+    font-size: 1.2rem;
+    font-weight: 700;
+    color: $color-text;
+    letter-spacing: 0.068em;
+
+    @include mq(tab) {
+      padding-bottom: 7px;
     }
   }
 

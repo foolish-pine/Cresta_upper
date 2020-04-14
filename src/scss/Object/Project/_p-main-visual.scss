@@ -38,7 +38,7 @@
     position: absolute;
     right: 0;
     z-index: 1;
-    width: calc((287 / 375) * 100%);
+    width: calc((283 / 375) * 100%);
     height: 667px;
     background-color: $color-mv-bg;
 
@@ -55,28 +55,30 @@
 
   &__catch {
     position: absolute;
-    top: 175px;
-    right: 20px;
+    top: 174px;
+    right: 16px;
     z-index: 3;
 
     @include mq(tab) {
-      top: 330px;
-      right: 80px;
+      top: 329px;
+      right: 76px;
     }
 
     @include mq(pc) {
       top: 157px;
-      right: calc((194 / 1440) * 100%);
+      right: 166px;
     }
   }
 
   &__catch--sub {
+    margin-bottom: 17px;
     font-size: 1.6rem;
     font-weight: 700;
     color: #fff;
     letter-spacing: 0.063em;
 
     @include mq(pc) {
+      margin-bottom: 8px;
       font-size: 2rem;
     }
   }
@@ -84,11 +86,13 @@
   &__catch--main {
     font-size: 5.6rem;
     font-weight: 800;
+    line-height: calc(53 / 56);
     color: #fff;
     letter-spacing: 0.063em;
 
     @include mq(pc) {
       font-size: 7.2rem;
+      line-height: calc(86 / 72);
     }
   }
 }

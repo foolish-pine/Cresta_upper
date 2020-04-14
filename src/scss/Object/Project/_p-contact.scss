@@ -11,7 +11,7 @@
   }
 
   @include mq(pc) {
-    padding: 60px 0 120px;
+    padding: 60px 0 90px;
   }
 
   &__inner {
@@ -30,19 +30,39 @@
     }
   }
 
+  &__container {
+    @include mq(tab) {
+      max-width: 520px;
+    }
+
+    @include mq(pc) {
+      max-width: 440px;
+      padding: 72px 0;
+    }
+  }
+
   &__img {
-    margin-bottom: 30px;
+    margin-bottom: 26px;
 
     @include mq(tab) {
       max-width: 520px;
     }
+
+    @include mq(pc) {
+      max-width: 580px;
+    }
   }
 
   &__text {
-    margin-bottom: 60px;
+    margin-bottom: 56px;
+    font-size: 1.6rem;
 
     @include mq(tab) {
-      max-width: 520px;
+      margin-bottom: 35px;
+    }
+
+    @include mq(pc) {
+      margin-bottom: 18px;
     }
   }
 }
