@@ -33,6 +33,22 @@
     }
   }
 
+  input {
+    display: block;
+    width: 100%;
+    font-size: 1.4rem;
+    font-weight: 500;
+    color: #fff;
+    transition: all 0.4s;
+
+    @include mq(pc) {
+      &:hover {
+        color: #000;
+        transition: all 0.4s;
+      }
+    }
+  }
+
   @include mq(pc) {
     &:hover {
       color: $color-button-text-hover;

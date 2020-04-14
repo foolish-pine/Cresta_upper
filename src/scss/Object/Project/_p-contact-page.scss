@@ -1,0 +1,144 @@
+/* ================================================================
+  Contactページ
+   ================================================================ */
+
+.p-contact-page {
+  padding: 80px 0;
+
+  @include mq(tab) {
+    padding: 135px 0 197px;
+  }
+
+  @include mq(pc) {
+    padding: 120px 0;
+  }
+
+  &__inner {
+    max-width: $max-width-inner-sp;
+    margin: 0 auto;
+
+    @include mq(tab) {
+      max-width: $max-width-inner-tab;
+    }
+
+    @include mq(pc) {
+      max-width: 700px;
+    }
+  }
+
+  &__text {
+    padding-bottom: 60px;
+  }
+
+  &__error-list {
+    padding: 10px 30px;
+    margin-bottom: 30px;
+    font-size: 1.9rem;
+    color: #ff2e5a;
+    text-align: left;
+    border: 1px solid #ff2e5a;
+    border-radius: 5px;
+  }
+
+  &__radio-container {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 23px;
+
+    @include mq(tab) {
+      flex-direction: row;
+      align-items: center;
+    }
+  }
+
+  &__radio-button {
+    display: block;
+    width: 100px;
+    margin: 0 0 10px 10px;
+    vertical-align: bottom;
+  }
+
+  &__label {
+    display: inline-block;
+    margin-bottom: 8px;
+    font-size: 1.6rem;
+    font-weight: 700;
+    letter-spacing: 0.004em;
+  }
+
+  &__label-required {
+    &::after {
+      display: inline-block;
+      width: 34px;
+      height: 18px;
+      margin-left: 15px;
+      font-size: 1.2rem;
+      font-weight: 500;
+      color: #fff;
+      text-align: center;
+      content: "必須";
+      background-color: #333;
+    }
+  }
+
+  &__textbox {
+    width: 100%;
+    height: 48px;
+    margin-bottom: 37px;
+    line-height: 1.8;
+    border: solid 1px $color-form-border;
+  }
+
+  &__textarea {
+    margin-bottom: 40px;
+
+    textarea {
+      width: 100%;
+      height: 210px;
+      line-height: 1.5;
+      resize: none;
+      border: solid 1px $color-form-border;
+
+      @include mq(tab) {
+        height: 180px;
+      }
+
+      @include mq(pc) {
+        height: 212px;
+      }
+    }
+  }
+
+  &__button {
+    margin: 0 auto;
+  }
+
+  &__privacy-policy-container {
+    width: 100%;
+    height: 226px;
+    margin-bottom: 40px;
+    overflow: auto;
+    border: solid 1px $color-form-border;
+
+    @include mq(pc) {
+      height: 252px;
+    }
+  }
+
+  &__privacy-policy-title {
+    font-weight: 700;
+    letter-spacing: 0.004em;
+  }
+
+  &__privacy-policy-text {
+    font-weight: 500;
+    letter-spacing: 0.004em;
+  }
+
+  &__agree {
+    margin-bottom: 65px;
+    input {
+      margin-right: 10px;
+    }
+  }
+}
