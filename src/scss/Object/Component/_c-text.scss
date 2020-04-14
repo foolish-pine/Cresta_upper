@@ -19,6 +19,10 @@
     font-weight: 700;
     line-height: 2;
     color: $color-text;
+
+    @include mq(pc) {
+      font-size: 1.6rem;
+    }
   }
 
   &__section-title {

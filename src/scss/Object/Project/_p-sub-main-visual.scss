@@ -79,6 +79,10 @@
     @include mq(tab) {
       letter-spacing: 0.063em;
     }
+
+    @include mq(pc) {
+      font-size: 7.2rem;
+    }
   }
 
   &__catch--sub {
@@ -89,6 +93,10 @@
 
     @include mq(tab) {
       letter-spacing: 0.005em;
+    }
+
+    @include mq(pc) {
+      font-size: 2rem;
     }
   }
 }

@@ -6,16 +6,19 @@
   &__img {
     position: relative;
     z-index: 2;
-    width: calc((340 / 375) * 100%);
+    width: 340px;
     height: 230px;
     margin-left: calc((35 / 375) * -100%);
-    background-image: url(../img/ceo-img@2x.jpg);
-    background-repeat: no-repeat;
-    background-position: left center;
-    background-size: contain;
 
     @include mq(tab) {
+      width: 320px;
+      height: 216px;
       margin: 0;
+    }
+
+    @include mq() {
+      width: 420px;
+      height: 282px;
     }
   }
 
@@ -38,8 +41,13 @@
     background-color: $color-ceo-message-bg;
 
     @include mq(tab) {
-      width: calc((494 / 768) * 100%);
+      max-width: calc((494 / 768) * 100%);
       margin-left: auto;
+    }
+
+    @include mq(pc) {
+      max-width: calc((770 / 1100) * 100%);
+      padding: 120px 185px 90px;
     }
   }
 }

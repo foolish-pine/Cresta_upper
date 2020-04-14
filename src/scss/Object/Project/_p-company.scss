@@ -5,6 +5,10 @@
 .p-company {
   padding: 80px 0;
 
+  @include mq(pc) {
+    padding: 120px 0;
+  }
+
   &__inner {
     max-width: $max-width-inner-sp;
     margin: 0 auto;
@@ -30,6 +34,10 @@
     margin-bottom: 40px;
     margin-left: auto;
     border-collapse: collapse;
+
+    @include mq(pc) {
+      max-width: 800px;
+    }
   }
 
   &__table-row {
