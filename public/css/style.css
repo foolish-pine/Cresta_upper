@@ -470,6 +470,12 @@ button:focus {
   letter-spacing: 0;
 }
 
+@media print, screen and (min-width: 768px) {
+  .c-text__section-sub-title {
+    letter-spacing: 0.005em;
+  }
+}
+
 @media print, screen and (min-width: 1440px) {
   .c-text__section-sub-title {
     margin-bottom: 30px;
@@ -549,10 +555,17 @@ button:focus {
   z-index: 2;
   width: calc((340 / 375) * 100%);
   height: 230px;
+  margin-left: calc((35 / 375) * -100%);
   background-image: url(../img/ceo-img@2x.jpg);
   background-repeat: no-repeat;
   background-position: left center;
   background-size: contain;
+}
+
+@media print, screen and (min-width: 768px) {
+  .p-ceo-message__img {
+    margin: 0;
+  }
 }
 
 .p-ceo-message__inner {
@@ -576,6 +589,13 @@ button:focus {
   padding: 125px 28px 52px;
   margin-top: -100px;
   background-color: #f0f0f0;
+}
+
+@media print, screen and (min-width: 768px) {
+  .p-ceo-message__container {
+    width: calc((494 / 768) * 100%);
+    margin-left: auto;
+  }
 }
 
 /* ================================================================
@@ -602,19 +622,23 @@ button:focus {
   }
 }
 
+.p-company__section-title {
+  padding-bottom: 30px;
+  margin-bottom: 0;
+  border-bottom: 1px solid #ddd;
+}
+
 .p-company__table {
   width: 100%;
+  max-width: 678px;
   margin-bottom: 40px;
+  margin-left: auto;
   border-collapse: collapse;
 }
 
 .p-company__table-row {
   width: 100%;
   height: 60px;
-  border-top: 1px solid #ddd;
-}
-
-.p-company__table-row:last-child {
   border-bottom: 1px solid #ddd;
 }
 
@@ -624,6 +648,12 @@ button:focus {
   font-weight: 700;
   text-align: left;
   letter-spacing: 0.004em;
+}
+
+@media print, screen and (min-width: 768px) {
+  .p-company__table-header {
+    width: 20%;
+  }
 }
 
 .p-company__table-data {
@@ -1151,11 +1181,23 @@ button:focus {
   letter-spacing: 0;
 }
 
+@media print, screen and (min-width: 768px) {
+  .p-sub-main-visual__catch--main {
+    letter-spacing: 0.063em;
+  }
+}
+
 .p-sub-main-visual__catch--sub {
   font-size: 1.6rem;
   font-weight: 700;
   color: #fff;
   letter-spacing: 0;
+}
+
+@media print, screen and (min-width: 768px) {
+  .p-sub-main-visual__catch--sub {
+    letter-spacing: 0.005em;
+  }
 }
 
 /* ================================================================
@@ -1252,6 +1294,7 @@ button:focus {
 @media print, screen and (min-width: 768px) {
   .p-vision__inner {
     max-width: calc((708 / 768) * 100%);
+    padding-left: 150px;
   }
 }
 

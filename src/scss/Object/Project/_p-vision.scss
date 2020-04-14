@@ -11,6 +11,7 @@
 
     @include mq(tab) {
       max-width: $max-width-inner-tab;
+      padding-left: 150px;
     }
 
     @include mq(pc) {

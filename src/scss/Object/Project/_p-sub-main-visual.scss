@@ -75,6 +75,10 @@
     font-weight: 800;
     color: #fff;
     letter-spacing: 0;
+
+    @include mq(tab) {
+      letter-spacing: 0.063em;
+    }
   }
 
   &__catch--sub {
@@ -82,5 +86,9 @@
     font-weight: 700;
     color: #fff;
     letter-spacing: 0;
+
+    @include mq(tab) {
+      letter-spacing: 0.005em;
+    }
   }
 }
