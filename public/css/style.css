@@ -356,7 +356,7 @@ button:focus {
 /* ===================================================================
   ボタンコンポーネント
    =================================================================== */
-.c-button--default, .c-button--top, .c-button--back {
+.c-button--default {
   width: 160px;
   height: 36px;
   font-size: 1.1rem;
@@ -365,53 +365,36 @@ button:focus {
   letter-spacing: 0.015em;
 }
 
-.c-button--default, .c-button--top {
+.c-button--default {
   background-color: #000;
+  border: 1px solid #000;
   -webkit-transition: all 0.4s;
   transition: all 0.4s;
 }
 
-.c-button--default a, .c-button--top a {
+.c-button--default a {
   display: block;
   font-weight: 500;
   color: #fff;
   text-decoration: none;
+  -webkit-transition: all 0.4s;
+  transition: all 0.4s;
 }
 
 @media print, screen and (min-width: 1440px) {
-  .c-button--default:hover, .c-button--top:hover {
-    font-weight: 700;
-    color: #1b1310;
-    background-color: #fff;
+  .c-button--default a:hover {
+    color: #000;
     -webkit-transition: all 0.4s;
     transition: all 0.4s;
   }
 }
 
-.c-button--back {
-  color: #1b1310;
-  background-color: #fff;
-}
-
 @media print, screen and (min-width: 1440px) {
-  .c-button--back:hover {
-    font-weight: 700;
-    color: #1b1310;
+  .c-button--default:hover {
+    color: #000;
     background-color: #fff;
-  }
-}
-
-.c-button--top a {
-  display: block;
-  width: 100%;
-  color: #fff;
-  text-decoration: none;
-  border-radius: 51px;
-}
-
-@media print, screen and (min-width: 1440px) {
-  .c-button--top a:hover {
-    color: #1b1310;
+    -webkit-transition: all 0.4s;
+    transition: all 0.4s;
   }
 }
 
@@ -937,7 +920,7 @@ button:focus {
 @media print, screen and (min-width: 1440px) {
   .p-main-visual__catch {
     top: 157px;
-    right: 194px;
+    right: calc((194 / 1440) * 100%);
   }
 }
 

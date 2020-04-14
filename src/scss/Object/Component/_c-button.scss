@@ -15,6 +15,7 @@
   @extend %c-button;
 
   background-color: #000;
+  border: 1px solid #000;
   transition: all 0.4s;
 
   a {
@@ -22,47 +23,21 @@
     font-weight: 500;
     color: #fff;
     text-decoration: none;
-  }
-
-  @include mq(pc) {
-    &:hover {
-      font-weight: 700;
-      color: $color-button-text-hover;
-      background-color: #fff;
-      transition: all 0.4s;
-    }
-  }
-}
-
-.c-button--back {
-  @extend %c-button;
-
-  color: $color-button-text-hover;
-  background-color: #fff;
-
-  @include mq(pc) {
-    &:hover {
-      font-weight: 700;
-      color: $color-button-text-hover;
-      background-color: #fff;
-    }
-  }
-}
-
-.c-button--top {
-  @extend .c-button--default;
-
-  a {
-    display: block;
-    width: 100%;
-    color: #fff;
-    text-decoration: none;
-    border-radius: 51px;
+    transition: all 0.4s;
 
     @include mq(pc) {
       &:hover {
-        color: $color-button-text-hover;
+        color: #000;
+        transition: all 0.4s;
       }
+    }
+  }
+
+  @include mq(pc) {
+    &:hover {
+      color: $color-button-text-hover;
+      background-color: #fff;
+      transition: all 0.4s;
     }
   }
 }
