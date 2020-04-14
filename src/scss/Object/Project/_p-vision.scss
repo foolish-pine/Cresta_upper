@@ -1,0 +1,26 @@
+/* ================================================================
+  ヴィジョン
+   ================================================================ */
+
+.p-vision {
+  padding: 80px 0 50px;
+
+  @include mq(pc) {
+    padding: 120px 0 90px;
+  }
+
+  &__inner {
+    max-width: $max-width-inner-sp;
+    margin: 0 auto;
+
+    @include mq(tab) {
+      max-width: $max-width-inner-tab;
+      padding-left: 150px;
+    }
+
+    @include mq(pc) {
+      max-width: $max-width-inner-pc;
+      padding-left: 230px;
+    }
+  }
+}

@@ -1,36 +1,36 @@
 /* ================================================================
-  メインビジュアル
+  下層ページメインヴィジュアル
    ================================================================ */
 
-.p-main-visual {
-  height: 745px;
+.p-sub-main-visual {
+  height: 449px;
 
   @include mq(tab) {
-    height: 1104px;
+    height: 615px;
   }
 
   @include mq(pc) {
-    height: 860px;
+    height: 464;
   }
 
   &__img {
     position: absolute;
     z-index: 2;
     width: calc((287 / 375) * 100%);
-    height: 580px;
-    background-image: url(../img/kv-img@2x.jpg);
+    height: 387px;
+    background-image: url(../img/heading-img@2x.jpg);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
 
     @include mq(tab) {
-      width: calc((600 / 768) * 100%);
-      height: 890px;
+      width: calc((587 / 768) * 100%);
+      height: 529px;
     }
 
     @include mq(pc) {
       width: calc((1100 / 1440) * 100%);
-      height: 640px;
+      height: 387px;
     }
   }
 
@@ -38,35 +38,50 @@
     position: absolute;
     right: 0;
     z-index: 1;
-    width: calc((287 / 375) * 100%);
-    height: 667px;
+    width: calc((198 / 375) * 100%);
+    height: 449px;
     background-color: $color-mv-bg;
 
     @include mq(tab) {
-      width: calc((562 / 768) * 100%);
-      height: 1024px;
+      width: calc((406 / 768) * 100%);
+      height: 615px;
     }
 
     @include mq(pc) {
       width: calc((780 / 1440) * 100%);
-      height: 740px;
+      height: 464px;
     }
   }
 
   &__catch {
     position: absolute;
     top: 175px;
-    right: 20px;
+    right: 29px;
     z-index: 3;
 
     @include mq(tab) {
-      top: 330px;
-      right: 80px;
+      top: 220px;
+      right: 98px;
     }
 
     @include mq(pc) {
-      top: 157px;
-      right: calc((194 / 1440) * 100%);
+      top: 156px;
+      right: calc((170 / 1440) * 100%);
+    }
+  }
+
+  &__catch--main {
+    font-size: 5.2rem;
+    font-weight: 800;
+    color: #fff;
+    letter-spacing: 0;
+
+    @include mq(tab) {
+      letter-spacing: 0.063em;
+    }
+
+    @include mq(pc) {
+      font-size: 7.2rem;
     }
   }
 
@@ -74,21 +89,14 @@
     font-size: 1.6rem;
     font-weight: 700;
     color: #fff;
-    letter-spacing: 0.063em;
+    letter-spacing: 0;
+
+    @include mq(tab) {
+      letter-spacing: 0.005em;
+    }
 
     @include mq(pc) {
       font-size: 2rem;
-    }
-  }
-
-  &__catch--main {
-    font-size: 5.6rem;
-    font-weight: 800;
-    color: #fff;
-    letter-spacing: 0.063em;
-
-    @include mq(pc) {
-      font-size: 7.2rem;
     }
   }
 }

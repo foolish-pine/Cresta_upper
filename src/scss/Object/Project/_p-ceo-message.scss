@@ -1,0 +1,53 @@
+/* ================================================================
+  CEOメッセージ
+   ================================================================ */
+
+.p-ceo-message {
+  &__img {
+    position: relative;
+    z-index: 2;
+    width: 340px;
+    height: 230px;
+    margin-left: calc((35 / 375) * -100%);
+
+    @include mq(tab) {
+      width: 320px;
+      height: 216px;
+      margin: 0;
+    }
+
+    @include mq() {
+      width: 420px;
+      height: 282px;
+    }
+  }
+
+  &__inner {
+    max-width: $max-width-inner-sp;
+    margin: 0 auto;
+
+    @include mq(tab) {
+      max-width: $max-width-inner-tab;
+    }
+
+    @include mq(pc) {
+      max-width: $max-width-inner-pc;
+    }
+  }
+
+  &__container {
+    padding: 125px 28px 52px;
+    margin-top: -100px;
+    background-color: $color-ceo-message-bg;
+
+    @include mq(tab) {
+      max-width: calc((494 / 768) * 100%);
+      margin-left: auto;
+    }
+
+    @include mq(pc) {
+      max-width: calc((770 / 1100) * 100%);
+      padding: 120px 185px 90px;
+    }
+  }
+}

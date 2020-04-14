@@ -439,6 +439,20 @@ button:focus {
   }
 }
 
+.c-text--sub {
+  margin-bottom: 28px;
+  font-size: 1.4rem;
+  font-weight: 700;
+  line-height: 2;
+  color: #333;
+}
+
+@media print, screen and (min-width: 1440px) {
+  .c-text--sub {
+    font-size: 1.6rem;
+  }
+}
+
 .c-text__section-title {
   margin-bottom: 30px;
   font-size: 2.8rem;
@@ -454,17 +468,22 @@ button:focus {
   }
 }
 
-.c-text__sectionSubTitle {
-  margin-bottom: 20px;
-  font-size: 2rem;
+.c-text__section-sub-title {
+  margin-bottom: 30px;
+  font-size: 2.4rem;
   font-weight: 700;
-  line-height: 2;
-  color: #141414;
-  letter-spacing: 0.1em;
+  color: #333;
+  letter-spacing: 0;
+}
+
+@media print, screen and (min-width: 768px) {
+  .c-text__section-sub-title {
+    letter-spacing: 0.005em;
+  }
 }
 
 @media print, screen and (min-width: 1440px) {
-  .c-text__sectionSubTitle {
+  .c-text__section-sub-title {
     margin-bottom: 30px;
     font-size: 2.4rem;
   }
@@ -474,6 +493,9 @@ button:focus {
   Project
   プロジェクト
 ================================================================ */
+/* ================================================================
+   
+   ================================================================ */
 /* ================================================================
   About
    ================================================================ */
@@ -529,6 +551,150 @@ button:focus {
 
 .p-about__text {
   margin-bottom: 70px;
+}
+
+/* ================================================================
+  CEOメッセージ
+   ================================================================ */
+.p-ceo-message__img {
+  position: relative;
+  z-index: 2;
+  width: 340px;
+  height: 230px;
+  margin-left: calc((35 / 375) * -100%);
+}
+
+@media print, screen and (min-width: 768px) {
+  .p-ceo-message__img {
+    width: 320px;
+    height: 216px;
+    margin: 0;
+  }
+}
+
+@media print, screen and (min-width: 1440px) {
+  .p-ceo-message__img {
+    width: 420px;
+    height: 282px;
+  }
+}
+
+.p-ceo-message__inner {
+  max-width: calc((345 / 375) * 100%);
+  margin: 0 auto;
+}
+
+@media print, screen and (min-width: 768px) {
+  .p-ceo-message__inner {
+    max-width: calc((708 / 768) * 100%);
+  }
+}
+
+@media print, screen and (min-width: 1440px) {
+  .p-ceo-message__inner {
+    max-width: 1100px;
+  }
+}
+
+.p-ceo-message__container {
+  padding: 125px 28px 52px;
+  margin-top: -100px;
+  background-color: #f0f0f0;
+}
+
+@media print, screen and (min-width: 768px) {
+  .p-ceo-message__container {
+    max-width: calc((494 / 768) * 100%);
+    margin-left: auto;
+  }
+}
+
+@media print, screen and (min-width: 1440px) {
+  .p-ceo-message__container {
+    max-width: calc((770 / 1100) * 100%);
+    padding: 120px 185px 90px;
+  }
+}
+
+/* ================================================================
+  Company
+   ================================================================ */
+.p-company {
+  padding: 80px 0;
+}
+
+@media print, screen and (min-width: 1440px) {
+  .p-company {
+    padding: 120px 0;
+  }
+}
+
+.p-company__inner {
+  max-width: calc((345 / 375) * 100%);
+  margin: 0 auto;
+}
+
+@media print, screen and (min-width: 768px) {
+  .p-company__inner {
+    max-width: calc((708 / 768) * 100%);
+  }
+}
+
+@media print, screen and (min-width: 1440px) {
+  .p-company__inner {
+    max-width: 1100px;
+  }
+}
+
+.p-company__section-title {
+  padding-bottom: 30px;
+  margin-bottom: 0;
+  border-bottom: 1px solid #ddd;
+}
+
+.p-company__table {
+  width: 100%;
+  max-width: 678px;
+  margin-bottom: 40px;
+  margin-left: auto;
+  border-collapse: collapse;
+}
+
+@media print, screen and (min-width: 1440px) {
+  .p-company__table {
+    max-width: 800px;
+  }
+}
+
+.p-company__table-row {
+  width: 100%;
+  height: 60px;
+  border-bottom: 1px solid #ddd;
+}
+
+.p-company__table-header {
+  width: 50%;
+  font-size: 1.4rem;
+  font-weight: 700;
+  text-align: left;
+  letter-spacing: 0.004em;
+}
+
+@media print, screen and (min-width: 768px) {
+  .p-company__table-header {
+    width: 20%;
+  }
+}
+
+.p-company__table-data {
+  font-size: 1.4rem;
+  font-weight: 400;
+  letter-spacing: 0.004em;
+}
+
+.p-company iframe {
+  width: 100%;
+  height: 470px;
 }
 
 /* ================================================================
@@ -924,18 +1090,156 @@ button:focus {
   }
 }
 
-.p-main-visual__catch--1 {
+.p-main-visual__catch--sub {
   font-size: 1.6rem;
   font-weight: 700;
   color: #fff;
   letter-spacing: 0.063em;
 }
 
-.p-main-visual__catch--2 {
+@media print, screen and (min-width: 1440px) {
+  .p-main-visual__catch--sub {
+    font-size: 2rem;
+  }
+}
+
+.p-main-visual__catch--main {
   font-size: 5.6rem;
   font-weight: 800;
   color: #fff;
   letter-spacing: 0.063em;
+}
+
+@media print, screen and (min-width: 1440px) {
+  .p-main-visual__catch--main {
+    font-size: 7.2rem;
+  }
+}
+
+/* ================================================================
+  下層ページメインヴィジュアル
+   ================================================================ */
+.p-sub-main-visual {
+  height: 449px;
+}
+
+@media print, screen and (min-width: 768px) {
+  .p-sub-main-visual {
+    height: 615px;
+  }
+}
+
+@media print, screen and (min-width: 1440px) {
+  .p-sub-main-visual {
+    height: 464;
+  }
+}
+
+.p-sub-main-visual__img {
+  position: absolute;
+  z-index: 2;
+  width: calc((287 / 375) * 100%);
+  height: 387px;
+  background-image: url(../img/heading-img@2x.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+@media print, screen and (min-width: 768px) {
+  .p-sub-main-visual__img {
+    width: calc((587 / 768) * 100%);
+    height: 529px;
+  }
+}
+
+@media print, screen and (min-width: 1440px) {
+  .p-sub-main-visual__img {
+    width: calc((1100 / 1440) * 100%);
+    height: 387px;
+  }
+}
+
+.p-sub-main-visual__bg {
+  position: absolute;
+  right: 0;
+  z-index: 1;
+  width: calc((198 / 375) * 100%);
+  height: 449px;
+  background-color: #222;
+}
+
+@media print, screen and (min-width: 768px) {
+  .p-sub-main-visual__bg {
+    width: calc((406 / 768) * 100%);
+    height: 615px;
+  }
+}
+
+@media print, screen and (min-width: 1440px) {
+  .p-sub-main-visual__bg {
+    width: calc((780 / 1440) * 100%);
+    height: 464px;
+  }
+}
+
+.p-sub-main-visual__catch {
+  position: absolute;
+  top: 175px;
+  right: 29px;
+  z-index: 3;
+}
+
+@media print, screen and (min-width: 768px) {
+  .p-sub-main-visual__catch {
+    top: 220px;
+    right: 98px;
+  }
+}
+
+@media print, screen and (min-width: 1440px) {
+  .p-sub-main-visual__catch {
+    top: 156px;
+    right: calc((170 / 1440) * 100%);
+  }
+}
+
+.p-sub-main-visual__catch--main {
+  font-size: 5.2rem;
+  font-weight: 800;
+  color: #fff;
+  letter-spacing: 0;
+}
+
+@media print, screen and (min-width: 768px) {
+  .p-sub-main-visual__catch--main {
+    letter-spacing: 0.063em;
+  }
+}
+
+@media print, screen and (min-width: 1440px) {
+  .p-sub-main-visual__catch--main {
+    font-size: 7.2rem;
+  }
+}
+
+.p-sub-main-visual__catch--sub {
+  font-size: 1.6rem;
+  font-weight: 700;
+  color: #fff;
+  letter-spacing: 0;
+}
+
+@media print, screen and (min-width: 768px) {
+  .p-sub-main-visual__catch--sub {
+    letter-spacing: 0.005em;
+  }
+}
+
+@media print, screen and (min-width: 1440px) {
+  .p-sub-main-visual__catch--sub {
+    font-size: 2rem;
+  }
 }
 
 /* ================================================================
@@ -1014,6 +1318,38 @@ button:focus {
 @media print, screen and (min-width: 1440px) {
   .p-topics__button {
     margin-left: auto;
+  }
+}
+
+/* ================================================================
+  ヴィジョン
+   ================================================================ */
+.p-vision {
+  padding: 80px 0 50px;
+}
+
+@media print, screen and (min-width: 1440px) {
+  .p-vision {
+    padding: 120px 0 90px;
+  }
+}
+
+.p-vision__inner {
+  max-width: calc((345 / 375) * 100%);
+  margin: 0 auto;
+}
+
+@media print, screen and (min-width: 768px) {
+  .p-vision__inner {
+    max-width: calc((708 / 768) * 100%);
+    padding-left: 150px;
+  }
+}
+
+@media print, screen and (min-width: 1440px) {
+  .p-vision__inner {
+    max-width: 1100px;
+    padding-left: 230px;
   }
 }
 
