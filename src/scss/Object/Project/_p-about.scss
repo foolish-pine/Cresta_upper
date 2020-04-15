@@ -33,16 +33,26 @@
 
     @include mq(tab) {
       max-width: 590px;
+      padding: 40px 30px;
       margin: 0 auto;
     }
 
     @include mq(pc) {
       max-width: 590px;
+      padding: 50px 30px;
       margin: 0;
     }
   }
 
   &__text {
-    margin-bottom: 70px;
+    margin-bottom: 77px;
+
+    @include mq(tab) {
+      margin-bottom: 48px;
+    }
+
+    @include mq(pc) {
+      margin-bottom: 27px;
+    }
   }
 }

@@ -30,6 +30,7 @@
     }
 
     @include mq(pc) {
+      top: 30px;
       left: 58px;
       width: 260px;
     }
@@ -125,7 +126,7 @@
     }
 
     @include mq(pc) {
-      top: 38px;
+      top: 35px;
       right: 58px;
     }
 

@@ -154,11 +154,11 @@ function validation($data)
       </div>
       <nav class="p-header__nav">
         <ul class="p-header__list">
-          <li class="p-header__item"><a class="js-smoothscroll" href="../index.html#about">ABOUT US</a></li>
-          <li class="p-header__item"><a class="js-smoothscroll" href="../index.html#works">WORKS</a></li>
-          <li class="p-header__item"><a class="js-smoothscroll" href="../index.html#culture">CULTURE</a></li>
-          <li class="p-header__item"><a class="js-smoothscroll" href="../index.html#topics">TOPICS</a></li>
-          <li class="p-header__item"><a class="js-smoothscroll" href="../index.html#contact">CONTACT</a></li>
+          <li class="p-header__item"><a class="js-smoothscroll" href="../index.php#about">ABOUT US</a></li>
+          <li class="p-header__item"><a class="js-smoothscroll" href="../index.php#works">WORKS</a></li>
+          <li class="p-header__item"><a class="js-smoothscroll" href="../index.php#culture">CULTURE</a></li>
+          <li class="p-header__item"><a class="js-smoothscroll" href="../index.php#topics">TOPICS</a></li>
+          <li class="p-header__item"><a class="js-smoothscroll" href="../index.php#contact">CONTACT</a></li>
         </ul>
       </nav>
       <div class="p-header__menu">
@@ -172,7 +172,7 @@ function validation($data)
   </header>
   <main class="l-main">
     <div class="p-sub-main-visual">
-      <div class="p-sub-main-visual__img p-sub-main-visual__img--contact"></div>
+      <div class="p-sub-main-visual__img p-sub-main-visual__img--contact js-sticky-header-threshold"></div>
       <div class="p-sub-main-visual__bg"></div>
       <div class="p-sub-main-visual__catch">
         <p class="p-sub-main-visual__catch--main">
@@ -229,9 +229,9 @@ function validation($data)
             <textarea id="message" name="message" required><?php if( !empty($clean['message']) ){ echo $clean['message']; } ?></textarea>
           </div>
           <div class="p-contact-page__privacy-policy">
-            <p class="p-contact-page__label">PRIVACY POLICY</p>
+            <p class="p-contact-page__privacy-policy-title">PRIVACY POLICY</p>
             <div class="p-contact-page__privacy-policy-container">
-              <p class="p-contact-page__privacy-policy-title c-text">
+              <p class="p-contact-page__privacy-policy-section-title c-text">
                 個人情報保護方針
               </p>
               <p class="p-contact-page__privacy-policy-text c-text">
@@ -272,7 +272,7 @@ function validation($data)
                 お問い合わせ窓口<br>
                 当社の個人情報の取扱いに関するお問い合わせは下記までご連絡お願いいたします。<br>
                 株式会社ファイアープレイス<br>
-                044-589-4333
+                000-000-0000
               </p>
             </div>
           </div>

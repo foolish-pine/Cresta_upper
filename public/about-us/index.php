@@ -28,11 +28,11 @@
       </div>
       <nav class="p-header__nav">
         <ul class="p-header__list">
-          <li class="p-header__item"><a class="js-smoothscroll" href="../index.html#about">ABOUT US</a></li>
-          <li class="p-header__item"><a class="js-smoothscroll" href="../index.html#works">WORKS</a></li>
-          <li class="p-header__item"><a class="js-smoothscroll" href="../index.html#culture">CULTURE</a></li>
-          <li class="p-header__item"><a class="js-smoothscroll" href="../index.html#topics">TOPICS</a></li>
-          <li class="p-header__item"><a class="js-smoothscroll" href="../index.html#contact">CONTACT</a></li>
+          <li class="p-header__item"><a class="js-smoothscroll" href="../index.php#about">ABOUT US</a></li>
+          <li class="p-header__item"><a class="js-smoothscroll" href="../index.php#works">WORKS</a></li>
+          <li class="p-header__item"><a class="js-smoothscroll" href="../index.php#culture">CULTURE</a></li>
+          <li class="p-header__item"><a class="js-smoothscroll" href="../index.php#topics">TOPICS</a></li>
+          <li class="p-header__item"><a class="js-smoothscroll" href="../index.php#contact">CONTACT</a></li>
         </ul>
       </nav>
       <div class="p-header__menu">
@@ -46,7 +46,7 @@
   </header>
   <main class="l-main">
     <div class="p-sub-main-visual">
-      <div class="p-sub-main-visual__img p-sub-main-visual__img--about"></div>
+      <div class="p-sub-main-visual__img p-sub-main-visual__img--about js-sticky-header-threshold"></div>
       <div class="p-sub-main-visual__bg"></div>
       <div class="p-sub-main-visual__catch">
         <p class="p-sub-main-visual__catch--main">
@@ -65,26 +65,26 @@
         <h3 class="c-text__section-sub-title">
           デザインで人を笑顔にする会社
         </h3>
-        <p class="c-text--sub">
+        <p class="p-vision__text c-text--sub">
           私達のデザインで人が笑顔になる。
         </p>
-        <p class="c-text--sub">
+        <p class="p-vision__text c-text--sub">
           そんなデザインを目指しています。
         </p>
-        <p class="c-text--sub">
+        <p class="p-vision__text c-text--sub">
           私達が考える人を笑顔にできるデザインとは、<br>
           デザインが課題を適切に解決ができているかどうか。
         </p>
-        <p class="c-text--sub">
+        <p class="p-vision__text c-text--sub">
           ビジュアルだけではなく、<br>
           本当に求められているものは何かを考え抜いて、<br>
           デザインしていきたい。
         </p>
-        <p class="c-text--sub">
+        <p class="p-vision__text c-text--sub">
           誰かの幸せを創ることも、<br>
           世界の常識を変えていくことだってできる。
         </p>
-        <p class="c-text--sub">
+        <p class="p-vision__text c-text--sub">
           私達はデザインの力を信じています。
         </p>
       </div>
@@ -95,25 +95,25 @@
           <img src="../img/ceo-img@2x.jpg" alt="">
         </div>
         <div class="p-ceo-message__container">
-          <h2 class="c-text__section-title">
+          <h2 class="p-ceo-message__section-title c-text__section-title">
             CEO MESSAGE
           </h2>
-          <p class="c-text--sub">
+          <p class="p-ceo-message__text c-text--sub">
             良いデザインは人を幸せにする。
           </p>
-          <p class="c-text--sub">
+          <p class="p-ceo-message__text c-text--sub">
             私達はそう信じています。
           </p>
-          <p class="c-text--sub">
+          <p class="p-ceo-message__text c-text--sub">
             デザインを通して、ビジネスの課題とユーザーの課題を解決することで、世の中を幸せにしていきたい。
           </p>
-          <p class="c-text--sub">
+          <p class="p-ceo-message__text c-text--sub">
             現在はあらゆるプロダクトがデジタル化されており、デザイナーに対する需要はますます高まっています。それとともに、期待される役割も幅広くなりつつあります。
           </p>
-          <p class="c-text--sub">
+          <p class="p-ceo-message__text c-text--sub">
             クリエイティブで社会の可能性を切り開いていく。
           </p>
-          <p class="c-text--sub">
+          <p class="p-ceo-message__text c-text--sub">
             変化の激しい現代、私達はデザインの力で社会を良い方向に変革していく企業を目指していきます。
           </p>
         </div>
