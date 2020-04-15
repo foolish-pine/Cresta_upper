@@ -95,7 +95,7 @@
           <img src="../img/ceo-img@2x.jpg" alt="">
         </div>
         <div class="p-ceo-message__container">
-          <h2 class="c-text__section-title">
+          <h2 class="p-ceo-message__section-title c-text__section-title">
             CEO MESSAGE
           </h2>
           <p class="c-text--sub">

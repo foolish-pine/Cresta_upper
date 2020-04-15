@@ -472,7 +472,7 @@ button:focus {
 }
 
 .c-text__section-title {
-  margin-bottom: 26px;
+  margin-bottom: 35px;
   font-size: 2.8rem;
   font-weight: 800;
   color: #333;
@@ -487,7 +487,7 @@ button:focus {
 }
 
 .c-text__section-sub-title {
-  margin-bottom: 30px;
+  margin-bottom: 24px;
   font-size: 2.4rem;
   font-weight: 700;
   color: #333;
@@ -590,7 +590,7 @@ button:focus {
   z-index: 2;
   width: 340px;
   height: 230px;
-  margin-left: calc((35 / 375) * -100%);
+  margin-left: calc((17.5 / 375) * -100%);
 }
 
 @media print, screen and (min-width: 768px) {
@@ -626,14 +626,16 @@ button:focus {
 }
 
 .p-ceo-message__container {
-  padding: 125px 28px 52px;
+  padding: 125px 28px 48px;
   margin-top: -100px;
   background-color: #f0f0f0;
 }
 
 @media print, screen and (min-width: 768px) {
   .p-ceo-message__container {
-    max-width: calc((494 / 768) * 100%);
+    max-width: calc((494 / 708) * 100%);
+    padding: 108px 41px 60px;
+    margin-top: -84px;
     margin-left: auto;
   }
 }
@@ -641,7 +643,26 @@ button:focus {
 @media print, screen and (min-width: 1440px) {
   .p-ceo-message__container {
     max-width: calc((770 / 1100) * 100%);
-    padding: 120px 185px 90px;
+    padding: 120px 185px 57px;
+    margin-top: -138px;
+  }
+}
+
+.p-ceo-message__section-title {
+  margin-bottom: 32px;
+}
+
+@media print, screen and (min-width: 768px) {
+  .p-ceo-message__text {
+    font-size: 1.6rem;
+    line-height: calc(28 / 16);
+  }
+}
+
+@media print, screen and (min-width: 1440px) {
+  .p-ceo-message__text {
+    margin-bottom: 32px;
+    line-height: 2;
   }
 }
 
@@ -649,7 +670,7 @@ button:focus {
   Company
    ================================================================ */
 .p-company {
-  padding: 80px 0;
+  padding: 80px 0 76px;
 }
 
 @media print, screen and (min-width: 1440px) {
@@ -676,15 +697,21 @@ button:focus {
 }
 
 .p-company__section-title {
-  padding-bottom: 30px;
+  padding-bottom: 34px;
   margin-bottom: 0;
   border-bottom: 1px solid #ddd;
+}
+
+@media print, screen and (min-width: 768px) {
+  .p-company__section-title {
+    padding-bottom: 31px;
+  }
 }
 
 .p-company__table {
   width: 100%;
   max-width: 678px;
-  margin-bottom: 40px;
+  margin-bottom: 38px;
   margin-left: auto;
   border-collapse: collapse;
 }
@@ -701,8 +728,14 @@ button:focus {
   border-bottom: 1px solid #ddd;
 }
 
+@media print, screen and (min-width: 768px) {
+  .p-company__table-row {
+    height: 56px;
+  }
+}
+
 .p-company__table-header {
-  width: 50%;
+  width: 47%;
   font-size: 1.4rem;
   font-weight: 700;
   text-align: left;
@@ -711,7 +744,13 @@ button:focus {
 
 @media print, screen and (min-width: 768px) {
   .p-company__table-header {
-    width: 20%;
+    width: 21%;
+  }
+}
+
+@media print, screen and (min-width: 1440px) {
+  .p-company__table-header {
+    width: 18%;
   }
 }
 
@@ -724,6 +763,18 @@ button:focus {
 .p-company iframe {
   width: 100%;
   height: 470px;
+}
+
+@media print, screen and (min-width: 768px) {
+  .p-company iframe {
+    height: 230px;
+  }
+}
+
+@media print, screen and (min-width: 1440px) {
+  .p-company iframe {
+    height: 360px;
+  }
 }
 
 /* ================================================================
@@ -1360,7 +1411,7 @@ button:focus {
 
 @media print, screen and (min-width: 1440px) {
   .p-sub-main-visual {
-    height: 464;
+    height: 464px;
   }
 }
 
@@ -1421,7 +1472,7 @@ button:focus {
 
 .p-sub-main-visual__catch {
   position: absolute;
-  top: 175px;
+  top: 150px;
   right: 29px;
   z-index: 3;
 }
@@ -1436,11 +1487,12 @@ button:focus {
 @media print, screen and (min-width: 1440px) {
   .p-sub-main-visual__catch {
     top: 156px;
-    right: calc((170 / 1440) * 100%);
+    right: 165px;
   }
 }
 
 .p-sub-main-visual__catch--main {
+  margin-bottom: 5px;
   font-size: 5.2rem;
   font-weight: 800;
   color: #fff;
@@ -1455,6 +1507,7 @@ button:focus {
 
 @media print, screen and (min-width: 1440px) {
   .p-sub-main-visual__catch--main {
+    margin-bottom: 0;
     font-size: 7.2rem;
   }
 }
@@ -1583,12 +1636,18 @@ button:focus {
   ヴィジョン
    ================================================================ */
 .p-vision {
-  padding: 80px 0 50px;
+  padding: 80px 0 53px;
+}
+
+@media print, screen and (min-width: 768px) {
+  .p-vision {
+    padding: 80px 0 50px;
+  }
 }
 
 @media print, screen and (min-width: 1440px) {
   .p-vision {
-    padding: 120px 0 90px;
+    padding: 120px 0 92px;
   }
 }
 
@@ -1600,14 +1659,21 @@ button:focus {
 @media print, screen and (min-width: 768px) {
   .p-vision__inner {
     max-width: calc((708 / 768) * 100%);
-    padding-left: 150px;
+    padding-left: 120px;
   }
 }
 
 @media print, screen and (min-width: 1440px) {
   .p-vision__inner {
     max-width: 1100px;
-    padding-left: 230px;
+    padding-left: 226px;
+  }
+}
+
+@media print, screen and (min-width: 1440px) {
+  .p-vision__text {
+    margin-bottom: 32px;
+    line-height: 2;
   }
 }
 
