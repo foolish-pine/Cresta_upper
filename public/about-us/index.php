@@ -28,11 +28,11 @@
       </div>
       <nav class="p-header__nav">
         <ul class="p-header__list">
-          <li class="p-header__item"><a class="js-smoothscroll" href="../index.html#about">ABOUT US</a></li>
-          <li class="p-header__item"><a class="js-smoothscroll" href="../index.html#works">WORKS</a></li>
-          <li class="p-header__item"><a class="js-smoothscroll" href="../index.html#culture">CULTURE</a></li>
-          <li class="p-header__item"><a class="js-smoothscroll" href="../index.html#topics">TOPICS</a></li>
-          <li class="p-header__item"><a class="js-smoothscroll" href="../index.html#contact">CONTACT</a></li>
+          <li class="p-header__item"><a class="js-smoothscroll" href="../index.php#about">ABOUT US</a></li>
+          <li class="p-header__item"><a class="js-smoothscroll" href="../index.php#works">WORKS</a></li>
+          <li class="p-header__item"><a class="js-smoothscroll" href="../index.php#culture">CULTURE</a></li>
+          <li class="p-header__item"><a class="js-smoothscroll" href="../index.php#topics">TOPICS</a></li>
+          <li class="p-header__item"><a class="js-smoothscroll" href="../index.php#contact">CONTACT</a></li>
         </ul>
       </nav>
       <div class="p-header__menu">

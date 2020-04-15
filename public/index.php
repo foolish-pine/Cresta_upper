@@ -72,7 +72,7 @@
             DIGSMILEの社名にはそんな想いが込められています。
           </p>
           <div class="c-button--default">
-            <a href="about-us/index.html">
+            <a href="about-us/index.php">
               READ MORE
             </a>
           </div>

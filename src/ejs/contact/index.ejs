@@ -123,7 +123,7 @@ function validation($data)
 ?>
 
 <% path = '../'; %>
-<% scrollPath = '../index.html'; %>
+<% scrollPath = '../index.php'; %>
 <%- include('../common/_header'); %>
 <main class="l-main">
   <div class="p-sub-main-visual">
@@ -196,9 +196,9 @@ function validation($data)
             required><?php if( !empty($clean['message']) ){ echo $clean['message']; } ?></textarea>
         </div>
         <div class="p-contact-page__privacy-policy">
-          <p class="p-contact-page__label">PRIVACY POLICY</p>
+          <p class="p-contact-page__privacy-policy-title">PRIVACY POLICY</p>
           <div class="p-contact-page__privacy-policy-container">
-            <p class="p-contact-page__privacy-policy-title c-text">
+            <p class="p-contact-page__privacy-policy-section-title c-text">
               個人情報保護方針
             </p>
             <p class="p-contact-page__privacy-policy-text c-text">
@@ -239,7 +239,7 @@ function validation($data)
               お問い合わせ窓口<br>
               当社の個人情報の取扱いに関するお問い合わせは下記までご連絡お願いいたします。<br>
               株式会社ファイアープレイス<br>
-              044-589-4333
+              000-000-0000
             </p>
           </div>
         </div>
