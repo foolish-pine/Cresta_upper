@@ -9,7 +9,7 @@ $(function () {
 
   var $window = $(window),
     $header = $(".p-header"),
-    threshold = $(".p-main-visual__img, .p-sub-main-visual__img").outerHeight();
+    threshold = $(".js-sticky-header-threshold").outerHeight();
 
   $window.on("scroll", function () {
     if ($window.scrollTop() > threshold) {

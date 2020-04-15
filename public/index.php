@@ -46,7 +46,7 @@
   </header>
   <main class="l-main">
     <div class="p-main-visual">
-      <div class="p-main-visual__img"></div>
+      <div class="p-main-visual__img js-sticky-header-threshold"></div>
       <div class="p-main-visual__bg"></div>
       <div class="p-main-visual__catch">
         <p class="p-main-visual__catch--sub">

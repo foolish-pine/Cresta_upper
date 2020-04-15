@@ -76,7 +76,7 @@ gulp.task("ejs", (done) => {
       plumber({ errorHandler: notify.onError("Error: <%= error.message %>") })
     ) //エラーチェック
     .pipe(ejs({}, {}, { ext: ".html" }))
-    .pipe(rename({ extname: ".html" })) //拡張子を変更
+    .pipe(rename({ extname: ".php" })) //拡張子を変更
     .pipe(htmlbeautify(options))
     .pipe(gulp.dest("./public")); //出力先
   done();

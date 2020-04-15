@@ -172,7 +172,7 @@ function validation($data)
   </header>
   <main class="l-main">
     <div class="p-sub-main-visual">
-      <div class="p-sub-main-visual__img p-sub-main-visual__img--contact"></div>
+      <div class="p-sub-main-visual__img p-sub-main-visual__img--contact js-sticky-header-threshold"></div>
       <div class="p-sub-main-visual__bg"></div>
       <div class="p-sub-main-visual__catch">
         <p class="p-sub-main-visual__catch--main">
