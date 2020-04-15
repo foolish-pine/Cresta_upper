@@ -28,6 +28,4 @@ HTML / CSS / Sass / JavaScript(jQuery) / PHP / gulp / Adobe XD / Visual Studio C
 <br>
 
 ## スクリーンショット
-
-<img src="https://github.com/foolish-pine/Cresta_upper/blob/master/src/img/top_pc.png?raw=true" height=600px>   <img src="https://github.com/foolish-pine/Cresta_upper/blob/master/src/img/top_tab.png?raw=true" height=600px>   <img src="https://github.com/foolish-pine/Cresta_upper/blob/master/src/img/top_sp.png?raw=true" height=600px>
-
+<img src="https://github.com/foolish-pine/Cresta_upper/blob/master/src/img/top_pc.png?raw=true" height=600px>     <img src="https://github.com/foolish-pine/Cresta_upper/blob/master/src/img/top_tab.png?raw=true" height=600px>     <img src="https://github.com/foolish-pine/Cresta_upper/blob/master/src/img/top_sp.png?raw=true" height=600px>
