@@ -57,3 +57,35 @@
     }
   }
 }
+
+.c-button--back {
+  @extend %c-button;
+
+  background-color: #fff;
+  border: 1px solid #000;
+  transition: all 0.4s;
+  input {
+    display: block;
+    width: 100%;
+    font-size: 1.4rem;
+    font-weight: 500;
+    color: #000;
+    transition: all 0.4s;
+  }
+}
+
+.c-button--top {
+  @extend %c-button;
+
+  background-color: #000;
+  border: 1px solid #000;
+  transition: all 0.4s;
+
+  a {
+    display: block;
+    font-weight: 500;
+    color: #fff;
+    text-decoration: none;
+    transition: all 0.4s;
+  }
+}
