@@ -23,16 +23,17 @@ HTML / CSS / Sass / JavaScript(jQuery) / PHP / gulp / Adobe XD / Visual Studio C
 <br>
 
 ## 制作時間
-xx時間
+20時間
 <br>
 <br>
 
 ## スクリーンショット
+<img src="https://github.com/foolish-pine/Cresta_upper/blob/master/src/img/top_pc.png?raw=true" height=700px> <img src="https://github.com/foolish-pine/Cresta_upper/blob/master/src/img/top_tab.png?raw=true" height=700px> <img src="https://github.com/foolish-pine/Cresta_upper/blob/master/src/img/top_sp.png?raw=true" height=700px>
 <br>
 <br>
-<img src="https://github.com/foolish-pine/Cresta_beginner/blob/master/src/img/cresta1_pc.png?raw=true" width=500px>
+<br>
+<img src="https://github.com/foolish-pine/Cresta_upper/blob/master/src/img/about_pc.png?raw=true" height=700px> <img src="https://github.com/foolish-pine/Cresta_upper/blob/master/src/img/about_tab.png?raw=true" height=700px> <img src="https://github.com/foolish-pine/Cresta_upper/blob/master/src/img/about_sp.png?raw=true" height=700px>
 <br>
 <br>
-<img src="https://github.com/foolish-pine/Cresta_beginner/blob/master/src/img/cresta1_sp.png?raw=true" width=500px>
 <br>
-<br>
+<img src="https://github.com/foolish-pine/Cresta_upper/blob/master/src/img/contact_pc.png?raw=true" height=700px> <img src="https://github.com/foolish-pine/Cresta_upper/blob/master/src/img/contact_tab.png?raw=true" height=700px> <img src="https://github.com/foolish-pine/Cresta_upper/blob/master/src/img/contact_sp.png?raw=true" height=700px>
