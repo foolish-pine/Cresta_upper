@@ -104,8 +104,8 @@ if (!empty($clean['back'])) {
     date_default_timezone_set('Asia/Tokyo');
 
     $header = "MIME-Version: 1.0\n";
-    $header .= "From: Cresta Design <noreply@test.com>\n";
-    $header .= "Reply-To: Cresta Design <noreply@test.com>\n";
+    $header .= "From: DIGSMILE INC. <noreply@test.com>\n";
+    $header .= "Reply-To: DIGSMILE INC. <noreply@test.com>\n";
 
     $auto_reply_subject = 'お問い合わせありがとうございます。';
 
