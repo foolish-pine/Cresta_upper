@@ -1,3 +1,4 @@
+<!-- コンタクトフォーム用PHPここから -->
 <?php
 session_start();
 
@@ -170,9 +171,13 @@ function validation($data)
   return $error;
 }
 ?>
+<!-- コンタクトフォーム用PHPここまで -->
 
+<!-- 相対パス -->
 
+<!-- ナビゲーションリンクのパス -->
 
+<!-- ヘッダー読み込み -->
 <!DOCTYPE html>
 <html lang="ja">
 
@@ -192,6 +197,7 @@ function validation($data)
 
 <body>
   <div class="p-header__nav-filter"></div>
+  <!-- ヘッダーここから -->
   <header class="l-header">
     <div class="p-header">
       <div class="p-header__logo">
@@ -219,7 +225,9 @@ function validation($data)
       </div>
     </div>
   </header>
+  <!-- ヘッダーここまで -->
   <main class="l-main">
+    <!-- メインビジュアルここから -->
     <div class="p-sub-main-visual">
       <div class="p-sub-main-visual__img p-sub-main-visual__img--contact js-sticky-header-threshold"></div>
       <div class="p-sub-main-visual__bg"></div>
@@ -232,9 +240,10 @@ function validation($data)
         </p>
       </div>
     </div>
+    <!-- メインビジュアルここまで -->
     <div class="p-contact-page">
       <div class="p-contact-page__inner">
-        <!-- お問い合わせフォーム入力ページ -->
+        <!-- お問い合わせフォーム入力ページここから -->
         <?php if ($page_flag === 0) : ?>
         <p class="p-contact-page__text c-text">
           ご依頼やご相談についてのご質問やご要望がございましたら、下記フォームよりお気軽にお問い合わせください。送付いただいた内容を確認の上、担当者からご連絡させていただきます。
@@ -334,7 +343,8 @@ function validation($data)
             <input type="submit" name="confirmation" value="確認画面へ">
           </div>
         </form>
-        <!-- お問い合わせフォーム確認ページ -->
+        <!-- お問い合わせフォーム入力ページここまで -->
+        <!-- お問い合わせフォーム確認ページここから -->
         <?php elseif ($page_flag === 1) : ?>
         <form action="" method="post">
           <p class="p-contact-page__text--confirmation c-text">
@@ -395,16 +405,20 @@ function validation($data)
           <input type="hidden" name="message" value="<?php echo $clean['message']; ?>">
           <input type="hidden" name="agree" value="<?php echo $clean['agree']; ?>">
         </form>
-        <!-- お問い合わせフォーム完了ページ -->
+        <!-- お問い合わせフォーム確認ページここまで -->
+        <!-- お問い合わせフォーム完了ページここから -->
         <?php elseif ($page_flag === 2) : ?>
         <h2 class="p-contact-page__section-title c-text__section-title">送信が完了しました。</h2>
         <div class="p-contact-page__button c-button--top">
           <a href="../index.php">トップへ戻る</a>
         </div>
         <?php endif; ?>
+        <!-- お問い合わせフォーム完了ページここまで -->
       </div>
     </div>
   </main>
+  <!-- フッター読み込み -->
+  <!-- フッターここから -->
   <footer class="l-footer">
     <div class="p-footer">
       <div class="p-footer__inner">
@@ -412,6 +426,7 @@ function validation($data)
       </div>
     </div>
   </footer>
+  <!-- フッターここまで -->
   <!-- jQuery -->
   <script src="..//js/jQuery/jquery-3.5.0.min.js"></script>
   <script src="..//js/main.js"></script>

@@ -1,10 +1,10 @@
 /* ================================================================
-  Works & Culture
+  worksコンテンツ  cultureコンテンツ
    ================================================================ */
 
 .p-works-culture {
   padding: 40px 0;
-  background-color: $color-works-culture-bg;
+  background: $color-works-culture-bg;
 
   @include mq(tab) {
     padding: 60px 0 40px;

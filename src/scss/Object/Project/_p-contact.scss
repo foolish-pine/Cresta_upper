@@ -1,10 +1,10 @@
 /* ================================================================
-  Contact
+  contactコンテンツ
    ================================================================ */
 
 .p-contact {
   padding: 40px 0;
-  background-color: $color-contact-bg;
+  background: $color-contact-bg;
 
   @include mq(tab) {
     padding: 40px 0 80px;
