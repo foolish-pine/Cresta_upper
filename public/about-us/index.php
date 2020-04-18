@@ -14,7 +14,7 @@
   <!-- 検索結果から除外する -->
   <meta name="robots" content="none" />
   <!-- favicon -->
-  <link rel="apple-touch-icon" sizes="180x180" href="..// img/favicon/apple-touch-icon.png" />
+  <link rel="apple-touch-icon" sizes="180x180" href="..//img/favicon/apple-touch-icon.png" />
   <link rel="icon" href="..//img/favicon/favicon.ico" />
   <!-- CSS -->
   <link rel="stylesheet" href="..//css/style.css" />

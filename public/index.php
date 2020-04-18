@@ -13,7 +13,7 @@
   <!-- 検索結果から除外する -->
   <meta name="robots" content="none" />
   <!-- favicon -->
-  <link rel="apple-touch-icon" sizes="180x180" href="./ img/favicon/apple-touch-icon.png" />
+  <link rel="apple-touch-icon" sizes="180x180" href="./img/favicon/apple-touch-icon.png" />
   <link rel="icon" href="./img/favicon/favicon.ico" />
   <!-- CSS -->
   <link rel="stylesheet" href="./css/style.css" />
@@ -143,7 +143,7 @@
         <div class="p-topics__container">
           <div class="p-topics__content">
             <a href="">
-              <time class="p-topics__content-time" datetime="2020-2-1">
+              <time class="p-topics__content-time" datetime="2020-02-01">
                 2020.02.01
               </time>
               <p class="p-topics__content-text">
@@ -153,7 +153,7 @@
           </div>
           <div class="p-topics__content">
             <a href="">
-              <time class="p-topics__content-time" datetime="2020-1-18">
+              <time class="p-topics__content-time" datetime="2020-01-18">
                 2020.01.18
               </time>
               <p class="p-topics__content-text">
@@ -163,7 +163,7 @@
           </div>
           <div class="p-topics__content">
             <a href="">
-              <time class="p-topics__content-time" datetime="2020-1-1">
+              <time class="p-topics__content-time" datetime="2020-01-01">
                 2020.01.01
               </time>
               <p class="p-topics__content-text">
