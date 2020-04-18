@@ -1,3 +1,8 @@
+<!-- 相対パス -->
+
+<!-- ナビゲーションリンクのパス -->
+
+<!-- ヘッダー読み込み -->
 <!DOCTYPE html>
 <html lang="ja">
 
@@ -17,6 +22,7 @@
 
 <body>
   <div class="p-header__nav-filter"></div>
+  <!-- ヘッダーここから -->
   <header class="l-header">
     <div class="p-header">
       <div class="p-header__logo">
@@ -44,7 +50,9 @@
       </div>
     </div>
   </header>
+  <!-- ヘッダーここまで -->
   <main class="l-main">
+    <!-- メインビジュアルここから -->
     <div class="p-sub-main-visual">
       <div class="p-sub-main-visual__img p-sub-main-visual__img--about js-sticky-header-threshold"></div>
       <div class="p-sub-main-visual__bg"></div>
@@ -57,6 +65,8 @@
         </p>
       </div>
     </div>
+    <!-- メインビジュアルここまで -->
+    <!-- visionコンテンツここから -->
     <div class="p-vision">
       <div class="p-vision__inner">
         <h2 class="c-text__section-title">
@@ -89,6 +99,8 @@
         </p>
       </div>
     </div>
+    <!-- visionコンテンツここまで -->
+    <!-- ceo-messageコンテンツここから -->
     <div class="p-ceo-message">
       <div class="p-ceo-message__inner">
         <div class="p-ceo-message__img">
@@ -119,6 +131,8 @@
         </div>
       </div>
     </div>
+    <!-- ceo-messageコンテンツここまで -->
+    <!-- companyコンテンツここから -->
     <div class="p-company">
       <div class="p-company__inner">
         <h2 class="p-company__section-title c-text__section-title">
@@ -168,7 +182,10 @@
         </div>
       </div>
     </div>
+    <!-- companyコンテンツここまで -->
   </main>
+  <!-- フッター読み込み -->
+  <!-- フッターここから -->
   <footer class="l-footer">
     <div class="p-footer">
       <div class="p-footer__inner">
@@ -176,6 +193,7 @@
       </div>
     </div>
   </footer>
+  <!-- フッターここまで -->
   <!-- jQuery -->
   <script src="..//js/jQuery/jquery-3.5.0.min.js"></script>
   <script src="..//js/main.js"></script>

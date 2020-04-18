@@ -10,8 +10,8 @@ body {
   @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@500;700;800&display=swap"); // Google Fonts
 
   display: flex; // フッター固定用
-  flex-direction: column;
-  min-height: 100vh;
+  flex-direction: column; // フッター固定用
+  min-height: 100vh; // フッター固定用
   font-family: "Montserrat", "Yu Gothic", sans-serif;
   font-size: 1.6rem; // ルートのフォントサイズ = 1.6em (16px)
 }

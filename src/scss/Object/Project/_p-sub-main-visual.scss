@@ -18,9 +18,7 @@
     z-index: 2;
     width: calc((287 / 375) * 100%);
     height: 387px;
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
+    background: no-repeat center / cover;
 
     @include mq(tab) {
       width: calc((587 / 768) * 100%);
@@ -36,13 +34,13 @@
   &__img--about {
     @extend .p-sub-main-visual__img;
 
-    background-image: url(../img/heading-img@2x.jpg);
+    background: url(../img/heading-img@2x.jpg);
   }
 
   &__img--contact {
     @extend .p-sub-main-visual__img;
 
-    background-image: url(../img/heading-img_contact@2x.jpg);
+    background: url(../img/heading-img_contact@2x.jpg);
   }
 
   &__bg {
@@ -51,7 +49,7 @@
     z-index: 1;
     width: calc((198 / 375) * 100%);
     height: 449px;
-    background-color: $color-mv-bg;
+    background: $color-mv-bg;
 
     @include mq(tab) {
       width: calc((406 / 768) * 100%);

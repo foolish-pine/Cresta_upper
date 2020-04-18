@@ -1,3 +1,7 @@
+<!-- 相対パス -->
+
+<!-- ナビゲーションリンクのパス -->
+
 <!DOCTYPE html>
 <html lang="ja">
 
@@ -17,6 +21,7 @@
 
 <body>
   <div class="p-header__nav-filter"></div>
+  <!-- ヘッダーここから -->
   <header class="l-header">
     <div class="p-header">
       <div class="p-header__logo">
@@ -44,7 +49,10 @@
       </div>
     </div>
   </header>
+  <!-- ヘッダーここまで -->
+  <!-- ヘッダー読み込み -->
   <main class="l-main">
+    <!-- メインビジュアルここから -->
     <div class="p-main-visual">
       <div class="p-main-visual__img js-sticky-header-threshold"></div>
       <div class="p-main-visual__bg"></div>
@@ -60,6 +68,8 @@
         </p>
       </div>
     </div>
+    <!-- メインビジュアルここまで -->
+    <!-- aboutコンテンツここから -->
     <div id="about" class="p-about">
       <div class="p-about__inner">
         <div class="p-about__container">
@@ -79,8 +89,10 @@
         </div>
       </div>
     </div>
+    <!-- aboutコンテンツここまで -->
     <div class="p-works-culture">
       <div class="p-works-culture__inner">
+        <!-- worksコンテンツここから -->
         <div id="works" class="p-works">
           <h2 class="p-works-culture__section-title c-text__section-title">
             WORKS
@@ -99,6 +111,8 @@
             </a>
           </div>
         </div>
+        <!-- worksコンテンツここまで -->
+        <!-- cultureコンテンツここから -->
         <div id="culture" class="p-culture">
           <h2 class="p-works-culture__section-title c-text__section-title">
             CULTURE
@@ -117,8 +131,10 @@
             </a>
           </div>
         </div>
+        <!-- cultureコンテンツここまで -->
       </div>
     </div>
+    <!-- topicsコンテンツここから -->
     <div id="topics" class="p-topics">
       <div class="p-topics__inner">
         <h2 class="p-topics__section-title c-text__section-title">
@@ -163,6 +179,8 @@
         </div>
       </div>
     </div>
+    <!-- topicsコンテンツここまで -->
+    <!-- contactコンテンツここから -->
     <div id="contact" class="p-contact">
       <div class="p-contact__inner">
         <div class="p-contact__img">
@@ -183,7 +201,11 @@
           </div>
         </div>
       </div>
+    </div>
+    <!-- contactコンテンツここまで -->
   </main>
+  <!-- フッター読み込み -->
+  <!-- フッターここから -->
   <footer class="l-footer">
     <div class="p-footer">
       <div class="p-footer__inner">
@@ -191,6 +213,7 @@
       </div>
     </div>
   </footer>
+  <!-- フッターここまで -->
   <!-- jQuery -->
   <script src="./js/jQuery/jquery-3.5.0.min.js"></script>
   <script src="./js/main.js"></script>

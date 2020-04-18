@@ -14,7 +14,7 @@
 .c-button--default {
   @extend %c-button;
 
-  background-color: #000;
+  background: #000;
   border: 1px solid #000;
   transition: all 0.4s;
 
@@ -52,7 +52,7 @@
   @include mq(pc) {
     &:hover {
       color: $color-button-text-hover;
-      background-color: #fff;
+      background: #fff;
       transition: all 0.4s;
     }
   }
@@ -61,7 +61,7 @@
 .c-button--back {
   @extend %c-button;
 
-  background-color: #fff;
+  background: #fff;
   border: 1px solid #000;
   transition: all 0.4s;
   input {
@@ -77,7 +77,7 @@
 .c-button--top {
   @extend %c-button;
 
-  background-color: #000;
+  background: #000;
   border: 1px solid #000;
   transition: all 0.4s;
 
