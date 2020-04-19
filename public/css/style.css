@@ -1568,11 +1568,11 @@ button:focus {
 }
 
 .p-sub-main-visual__img--about {
-  background: url(../img/heading-img@2x.jpg);
+  background-image: url(../img/heading-img@2x.jpg);
 }
 
 .p-sub-main-visual__img--contact {
-  background: url(../img/heading-img_contact@2x.jpg);
+  background-image: url(../img/heading-img_contact@2x.jpg);
 }
 
 .p-sub-main-visual__bg {
