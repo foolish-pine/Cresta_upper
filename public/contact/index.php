@@ -30,16 +30,16 @@ $recruit= null;
 $IR= null;
 $others= null;
 
-if ($clean['purpose'] === '制作依頼') {
+if (!empty($clean['purpose']) && $clean['purpose'] === '制作依頼') {
   $order = $clean['purpose'];}
 
-if ($clean['purpose'] === '採用') {
+if (!empty($clean['purpose']) && $clean['purpose'] === '採用') {
   $recruit = $clean['purpose'];}
 
-if ($clean['purpose'] === 'IR') {
+if (!empty($clean['purpose']) && $clean['purpose'] === 'IR') {
   $IR = $clean['purpose'];}
   
-if ($clean['purpose'] === 'その他') {
+if (!empty($clean['purpose']) && $clean['purpose'] === 'その他') {
   $others = $clean['purpose'];}
 
 // 前後にある半角全角スペースを削除する関数
@@ -173,11 +173,11 @@ function validation($data)
 ?>
 <!-- コンタクトフォーム用PHPここまで -->
 
-<!-- 相対パス -->
 
-<!-- ナビゲーションリンクのパス -->
 
-<!-- ヘッダー読み込み -->
+
+
+
 <!DOCTYPE html>
 <html lang="ja">
 
@@ -189,10 +189,10 @@ function validation($data)
   <!-- 検索結果から除外する -->
   <meta name="robots" content="none" />
   <!-- favicon -->
-  <link rel="apple-touch-icon" sizes="180x180" href="..//img/favicon/apple-touch-icon.png" />
-  <link rel="icon" href="..//img/favicon/favicon.ico" />
+  <link rel="apple-touch-icon" sizes="180x180" href="../img/favicon/apple-touch-icon.png" />
+  <link rel="icon" href="../img/favicon/favicon.ico" />
   <!-- CSS -->
-  <link rel="stylesheet" href="..//css/style.css" />
+  <link rel="stylesheet" href="../css/style.css" />
 </head>
 
 <body>
@@ -201,9 +201,9 @@ function validation($data)
   <header class="l-header">
     <div class="p-header">
       <div class="p-header__logo">
-        <a href="../">
+        <a href="..">
           <h1>
-            <img src="..//img/site-logo@2x.png" alt="DIGSMILE INC.">
+            <img src="../img/site-logo@2x.png" alt="DIGSMILE INC.">
           </h1>
         </a>
       </div>
@@ -417,7 +417,7 @@ function validation($data)
       </div>
     </div>
   </main>
-  <!-- フッター読み込み -->
+
   <!-- フッターここから -->
   <footer class="l-footer">
     <div class="p-footer">
@@ -428,8 +428,8 @@ function validation($data)
   </footer>
   <!-- フッターここまで -->
   <!-- jQuery -->
-  <script src="..//js/jQuery/jquery-3.5.0.min.js"></script>
-  <script src="..//js/main.js"></script>
+  <script src="../js/jQuery/jquery-3.5.0.min.js"></script>
+  <script src="../js/main.js"></script>
 </body>
 
 </html>

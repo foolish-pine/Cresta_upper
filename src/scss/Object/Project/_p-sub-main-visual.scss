@@ -34,13 +34,13 @@
   &__img--about {
     @extend .p-sub-main-visual__img;
 
-    background: url(../img/heading-img@2x.jpg);
+    background-image: url(../img/heading-img@2x.jpg);
   }
 
   &__img--contact {
     @extend .p-sub-main-visual__img;
 
-    background: url(../img/heading-img_contact@2x.jpg);
+    background-image: url(../img/heading-img_contact@2x.jpg);
   }
 
   &__bg {
