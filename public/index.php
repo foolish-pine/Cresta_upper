@@ -2,6 +2,7 @@
 
 <!-- ナビゲーションリンクのパス -->
 
+<!-- ヘッダー読み込み -->
 <!DOCTYPE html>
 <html lang="ja">
 
@@ -50,7 +51,6 @@
     </div>
   </header>
   <!-- ヘッダーここまで -->
-  <!-- ヘッダー読み込み -->
   <main class="l-main">
     <!-- メインビジュアルここから -->
     <div class="p-main-visual">

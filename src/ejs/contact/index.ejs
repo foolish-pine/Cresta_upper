@@ -119,7 +119,7 @@ if (!empty($clean['back'])) {
     $auto_reply_text .= "メールアドレス：" . $clean['email'] . "\n";
     $auto_reply_text .= "電話番号：" . $clean['tel'] . "\n";
     $auto_reply_text .= "その他：\n" . $clean['message'] . "\n\n";
-    $auto_reply_text .= "このメールは以下のサイトのお問い合わせフォームから送信されました。\nhttps://cresta-upper.foolish-pine.com/index.php";
+    $auto_reply_text .= "このメールは以下のサイトのお問い合わせフォームから送信されました。\nhttps://cresta-upper.foolish-pine.com";
 
     // 利用者へメール送信
     mb_send_mail($clean['email'], $auto_reply_subject, $auto_reply_text, $header);
@@ -135,7 +135,7 @@ if (!empty($clean['back'])) {
     $admin_reply_text .= "メールアドレス：" . $clean['email'] . "\n";
     $admin_reply_text .= "電話番号：" . $clean['tel'] . "\n";
     $admin_reply_text .= "その他：\n" . $clean['message'] . "\n\n";
-    $admin_reply_text .= "このメールは以下のサイトのお問い合わせフォームから送信されました。\nhttps://cresta-upper.foolish-pine.com/index.php";
+    $admin_reply_text .= "このメールは以下のサイトのお問い合わせフォームから送信されました。\nhttps://cresta-upper.foolish-pine.com";
 
     // 管理者へメール送信
     mb_send_mail($clean['email'], $admin_reply_subject, $admin_reply_text, $header);
