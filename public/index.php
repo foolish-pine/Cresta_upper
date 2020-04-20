@@ -16,7 +16,7 @@
 </head>
 
 <body>
-  <div class="p-header__nav-filter"></div>
+  <span class="p-header__nav-filter"></span>
   <!-- ヘッダーここから -->
   <header class="l-header">
     <div class="p-header">
@@ -29,20 +29,18 @@
       </div>
       <nav class="p-header__nav">
         <ul class="p-header__list">
-          <li class="p-header__item"><a class="js-smoothscroll" href="#about">ABOUT US</a></li>
+          <li class="p-header__item"><a class="js-smoothscroll" href="./about-us/index.php">ABOUT US</a></li>
           <li class="p-header__item"><a class="js-smoothscroll" href="#works">WORKS</a></li>
           <li class="p-header__item"><a class="js-smoothscroll" href="#culture">CULTURE</a></li>
           <li class="p-header__item"><a class="js-smoothscroll" href="#topics">TOPICS</a></li>
-          <li class="p-header__item"><a class="js-smoothscroll" href="#contact">CONTACT</a></li>
+          <li class="p-header__item"><a class="js-smoothscroll" href="./contact/index.php">CONTACT</a></li>
         </ul>
       </nav>
-      <div class="p-header__menu">
-        <button class="p-header__menu-icon">
-          <span class="p-header__menu-line"></span>
-          <span class="p-header__menu-line"></span>
-          <span class="p-header__menu-line"></span>
-        </button>
-      </div>
+      <button class="p-header__menu js-hamburger-menu">
+        <span class="p-header__menu-line js-hamburger-menu-line"></span>
+        <span class="p-header__menu-line js-hamburger-menu-line"></span>
+        <span class="p-header__menu-line js-hamburger-menu-line"></span>
+      </button>
     </div>
   </header>
   <!-- ヘッダーここまで -->

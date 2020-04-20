@@ -23,15 +23,15 @@ $(function () {
   // ハンバーガーメニュー
   // ---------------------------------------------
   var $headerNav = $(".p-header__nav"),
-    $headerMenu = $(".p-header__menu"),
-    $headerMenuLine = $(".p-header__menu-line");
+    $hamburgerMenu = $(".js-hamburger-menu"),
+    $hamburgerMenuLine = $(".js-hamburger-menu-line");
 
   var mqPC = window.matchMedia("screen and (max-width:1439px)");
 
   // ウィンドウリサイズ時
   $(window).on("resize", function () {
     $headerNav.removeClass("open");
-    $headerMenuLine.stop(true).removeClass("active");
+    $hamburgerMenuLine.stop(true).removeClass("active");
     $(".p-header__nav-filter").fadeOut();
     if (mqPC.matches) {
       // sp, tabサイズのとき
@@ -48,8 +48,8 @@ $(function () {
   // メニューアイコンをクリックしてnavを開閉する
   var duration = 300;
 
-  $headerMenu.on("click", function () {
-    $headerMenuLine.stop(true).toggleClass("active");
+  $hamburgerMenu.on("click", function () {
+    $hamburgerMenuLine.stop(true).toggleClass("active");
     $headerNav.toggleClass("open");
     if (mqPC.matches) {
       // sp, tabサイズのとき
@@ -98,11 +98,11 @@ $(function () {
 
   // ナビの余白クリックでメニュー閉じる
   $headerNav.on("click", function () {
-    $headerMenuLine.stop(true).removeClass("active");
+    $hamburgerMenuLine.stop(true).removeClass("active");
     $headerNav.removeClass("open");
     if (mqPC.matches) {
       // sp, tabサイズのとき
-      $headerMenuLine.stop(true).removeClass("active");
+      $hamburgerMenuLine.stop(true).removeClass("active");
       $headerNav.removeClass("open");
       $headerNav.stop(true).animate(
         {
@@ -127,7 +127,7 @@ $(function () {
 
   // navの外側クリックでnav閉じる
   $(".p-header__nav-filter").on("click", function () {
-    $headerMenuLine.stop(true).removeClass("active");
+    $hamburgerMenuLine.stop(true).removeClass("active");
     $headerNav.removeClass("open");
     $headerNav.stop(true).animate(
       {
