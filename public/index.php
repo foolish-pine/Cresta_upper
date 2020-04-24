@@ -51,11 +51,11 @@
       <div class="p-main-visual__img js-sticky-header-threshold"></div>
       <div class="p-main-visual__bg"></div>
       <div class="p-main-visual__catch">
-        <p class="p-main-visual__catch--sub">
+        <p class="p-main-visual__catch--sub js-fadein-catch-sub">
           デザインで人を笑顔にする会社<br>
           DIGSMILE INC.
         </p>
-        <p class="p-main-visual__catch--main">
+        <p class="p-main-visual__catch--main js-fadein-catch-main">
           DESIGN<br>
           FOR<br>
           SMILE.
