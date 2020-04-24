@@ -224,6 +224,7 @@ function validation($data)
     </div>
   </header>
   <!-- ヘッダーここまで -->
+  <!-- メインここから -->
   <main class="l-main">
     <!-- メインビジュアルここから -->
     <div class="p-sub-main-visual">
@@ -239,6 +240,7 @@ function validation($data)
       </div>
     </div>
     <!-- メインビジュアルここまで -->
+    <!-- contact-pageコンテンツここから -->
     <div class="p-contact-page">
       <div class="p-contact-page__inner">
         <!-- お問い合わせフォーム入力ページここから -->
@@ -414,7 +416,9 @@ function validation($data)
         <!-- お問い合わせフォーム完了ページここまで -->
       </div>
     </div>
+    <!-- contact-pageコンテンツここから -->
   </main>
+  <!-- メインここまで -->
 
   <!-- フッターここから -->
   <footer class="l-footer">
