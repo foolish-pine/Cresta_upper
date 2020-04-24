@@ -44,6 +44,7 @@
     </div>
   </header>
   <!-- ヘッダーここまで -->
+  <!-- メインここから -->
   <main class="l-main">
     <!-- メインビジュアルここから -->
     <div class="p-main-visual">
@@ -197,6 +198,7 @@
     </div>
     <!-- contactコンテンツここまで -->
   </main>
+  <!-- メインここまで -->
 
   <!-- フッターここから -->
   <footer class="l-footer">
