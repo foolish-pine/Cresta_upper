@@ -11,20 +11,27 @@
 <br>
 
 ## デザインデータについて
-このサイトのデザインデータはクリエイター向けメディア「クリ★スタ」様にて配布されているものです。<br>
+このサイトのデザインデータは以下で配布されています。<br>
 <br>
 [【コーディング課題】XDからコーディングをしよう【上級編】](https://crestadesign.org/cording-third/)
 <br>
 <br>
 
 ## 制作に使用した言語・ツール
-HTML / CSS / Sass / JavaScript(jQuery) / PHP / gulp / Adobe XD / Visual Studio Code
+HTML / CSS / Sass / JavaScript(jQuery) / PHP / Gulp / Adobe XD
 <br>
 <br>
 
 ## 制作時間
 20時間
 <br>
+<br>
+
+## ポイント
+- XDのデザインカンプをもとにコーディングした、トップページと2つの下層ページからなるWebサイトです。
+- レスポンシブ対応あり(PC、タブレット、SP)。
+- スティッキーヘッダー、フェードイン、ドロワーメニューをjQueryで実装しました。
+- バリデーション機能つきのお問い合わせフォームをPHPで実装しました。
 <br>
 
 ## スクリーンショット
